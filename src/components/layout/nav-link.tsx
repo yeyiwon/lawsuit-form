@@ -11,7 +11,7 @@ export default function NavLink({ href, children }: NavLinkProps) {
     const target = document.getElementById(href.replace("#", ""));
     if (target) {
       window.scrollTo({
-        top: target.offsetTop - 0, // 헤더 높이 보정
+        top: target.offsetTop - 0,
         behavior: "smooth",
       });
     }

@@ -29,7 +29,7 @@ return (
         <p className="text-slate-500 mb-10 max-w-md">
             본 사건은 초기 착수금 없이 진행되며, 승소하여 실제 위자료를 받으실 때만 비용이 발생합니다.
         </p>
-        <Button asChild className="h-16 px-12 text-lg font-extrabold bg-slate-900 hover:bg-slate-800 text-white rounded-xl shadow-lg transition-all hover:-translate-y-1">
+        <Button asChild className="h-16 px-12 text-lg font-extrabold bg-slate-900 hover:bg-blue-700 text-white rounded-xl shadow-lg transition-all hover:-translate-y-1">
             <Link href="/lawsuit" scroll={true}>지금 소송 참여하기</Link>
         </Button>
         </div>

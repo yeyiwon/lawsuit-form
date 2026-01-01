@@ -44,7 +44,7 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                <Button asChild className="h-16 px-12 text-lg font-extrabold bg-slate-900 hover:bg-slate-800 text-white rounded-xl shadow-lg transition-all hover:-translate-y-1">
+                <Button asChild className="h-16 px-12 text-lg font-extrabold bg-slate-900 hover:bg-blue-700 text-white rounded-xl shadow-lg transition-all hover:-translate-y-1">
                     <Link href="/lawsuit">지금 소송 참여하기</Link>
                 </Button>
             </div>
