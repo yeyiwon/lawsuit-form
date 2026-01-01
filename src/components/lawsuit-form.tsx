@@ -87,7 +87,7 @@ export default function LawsuitForm() {
             reset();
             setTimeout(() => {
                 router.push("/");
-            }, 1500); 
+            }, 500); 
 
         } catch (error: unknown) {
             console.error("DB 전송 에러:", error);
