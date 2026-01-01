@@ -53,7 +53,7 @@ export default function InfoCards() {
             </CardContent>
         </Card>
         </FadeIn >
-        <FadeIn delay={0.4}>
+        <FadeIn delay={0.3}>
         <Card className={cardStyles}>
             <div className="bg-slate-800 h-1.5 w-full" />
             <CardHeader>
@@ -82,7 +82,7 @@ export default function InfoCards() {
             </CardContent>
         </Card>
         </FadeIn>
-        <FadeIn delay={0.6}>
+        <FadeIn delay={0.4}>
         <Card className={cardStyles}>
             <div className="bg-blue-600 h-1.5 w-full" />
             <CardHeader>
