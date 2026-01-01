@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Search } from "lucide-react";
 import useFormPersist from "react-hook-form-persist";
+import { useRouter } from "next/navigation";
 
 import { Form, FormField, FormItem, FormControl, FormMessage } from "@/components/ui/form";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -29,6 +30,7 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 export default function LawsuitForm() {
+    const router = useRouter();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
 
@@ -57,7 +59,7 @@ export default function LawsuitForm() {
     };
 
     const onSubmit = async (values: FormValues) => {
-        const toastId = toast.loading("신청서를 전송 중입니다...");
+        const toastId = toast.loading("신청서를 제출 중입니다...");
 
         try {
             const { error } = await supabase
@@ -83,7 +85,9 @@ export default function LawsuitForm() {
 
             localStorage.removeItem("lawsuit-form");
             reset();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => {
+                router.push("/");
+            }, 1500); 
 
         } catch (error: unknown) {
             console.error("DB 전송 에러:", error);
