@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/yeiwon/Desktop/lawsuit-form-main%202/app/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\nimport \"./globals.css\";\nexport const metadata: Metadata = {\n  title: \"쿠팡 개인정보 유출 집단소송\",\n  description: '\"전 국민의 70%가 털렸습니다. 피해는 확대될 수 있습니다.\" 법률사무소 심주엽 쿠팡 개인정보 유출 사태 집단소송 참여 모집',\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"ko\">\n      <body>\n          {children}\n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;sBACI;;;;;;;;;;;AAIX"}},
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///Users/yeiwon/Desktop/lawsuit-form-main%202/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}

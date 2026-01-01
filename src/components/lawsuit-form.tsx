@@ -49,6 +49,7 @@ export default function LawsuitForm() {
             has_leak_notice: "", is_member_during_period: "",
             name: "", phone: "", birth: "", email: "", 
             nationality: "native", has_guardian: "no",
+            guardian_name: "", guardian_phone: "", guardian_birth: "", guardian_relation: "",
             address: "", address_detail: "", privacy_agree: "" 
         },
     });
