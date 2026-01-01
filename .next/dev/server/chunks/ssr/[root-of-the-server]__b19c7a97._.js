@@ -1130,7 +1130,7 @@ function GuideCTA() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-slate-500 mb-10 max-w-md",
-                            children: "본 사건은 초기 착수금 없이 진행되며, 승소하여 실제 위자료를 받으실 때만 비용이 발생합니다."
+                            children: "본 사건은 초기 착수금 없이 진행됩니다."
                         }, void 0, false, {
                             fileName: "[project]/src/components/guide-cta.tsx",
                             lineNumber: 29,

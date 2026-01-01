@@ -7,13 +7,19 @@ interface NavLinkProps {
 
 export default function NavLink({ href, children }: NavLinkProps) {
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const target = document.getElementById(href.replace("#", ""));
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 0,
-        behavior: "smooth",
-      });
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+
+      const targetId = href.replace("/#", "");
+      const target = document.getElementById(targetId);
+      
+      if (target) {
+        const topOffset = target.offsetTop - 40;
+        window.scrollTo({
+          top: topOffset,
+          behavior: "smooth",
+        });
+      }
     }
   };
 
