@@ -1410,15 +1410,8 @@ function LawsuitForm() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormLabel"], {
                                                                     className: "text-[16px] font-bold text-slate-800 leading-snug",
-                                                                    children: [
-                                                                        "쿠팡으로부터 개인정보 유출 확인 문자 또는 이메일을 받으셨나요? ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Required"], {}, void 0, false, {
-                                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                            lineNumber: 112,
-                                                                            columnNumber: 81
-                                                                        }, void 0)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                    children: "쿠팡으로부터 개인정보 유출 확인 문자 또는 이메일을 받으셨나요?"
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
                                                                     lineNumber: 111,
                                                                     columnNumber: 41
@@ -1479,15 +1472,8 @@ function LawsuitForm() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormLabel"], {
                                                                     className: "text-[16px] font-bold text-slate-800 leading-snug",
-                                                                    children: [
-                                                                        "2025. 6. 24. 부터 2025. 11. 08. 사이에 쿠팡에 본인 명의로 가입되어 있으셨나요? ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Required"], {}, void 0, false, {
-                                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                            lineNumber: 129,
-                                                                            columnNumber: 102
-                                                                        }, void 0)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                    children: "2025. 6. 24. 부터 2025. 11. 08. 사이에 쿠팡에 본인 명의로 가입되어 있으셨나요?"
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
                                                                     lineNumber: 128,
                                                                     columnNumber: 41
@@ -1600,15 +1586,8 @@ function LawsuitForm() {
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormLabel"], {
                                                                     className: "font-bold text-slate-800",
-                                                                    children: [
-                                                                        "국적 ",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Required"], {}, void 0, false, {
-                                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                            lineNumber: 156,
-                                                                            columnNumber: 92
-                                                                        }, void 0)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                    children: "국적 "
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
                                                                     lineNumber: 156,
                                                                     columnNumber: 41

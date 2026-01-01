@@ -109,7 +109,7 @@ export default function LawsuitForm() {
                                 <FormField control={form.control} name="has_leak_notice" render={({ field }) => (
                                     <FormItem className="space-y-4">
                                         <FormLabel className="text-[16px] font-bold text-slate-800 leading-snug">
-                                            쿠팡으로부터 개인정보 유출 확인 문자 또는 이메일을 받으셨나요? <Required />
+                                            쿠팡으로부터 개인정보 유출 확인 문자 또는 이메일을 받으셨나요?
                                         </FormLabel>
                                         <FormControl>
                                             <RadioGroup onValueChange={field.onChange} value={field.value} className="flex gap-3">
@@ -126,7 +126,7 @@ export default function LawsuitForm() {
                                 <FormField control={form.control} name="is_member_during_period" render={({ field }) => (
                                     <FormItem className="space-y-4">
                                         <FormLabel className="text-[16px] font-bold text-slate-800 leading-snug">
-                                            2025. 6. 24. 부터 2025. 11. 08. 사이에 쿠팡에 본인 명의로 가입되어 있으셨나요? <Required />
+                                            2025. 6. 24. 부터 2025. 11. 08. 사이에 쿠팡에 본인 명의로 가입되어 있으셨나요?
                                         </FormLabel>
                                         <FormControl>
                                             <RadioGroup onValueChange={field.onChange} value={field.value} className="flex gap-3">
@@ -153,7 +153,7 @@ export default function LawsuitForm() {
                                 
                                 <FormField control={form.control} name="nationality" render={({ field }) => (
                                     <FormItem className="space-y-3">
-                                        <FormLabel className="font-bold text-slate-800">국적 <Required /></FormLabel>
+                                        <FormLabel className="font-bold text-slate-800">국적 </FormLabel>
                                         <RadioGroup onValueChange={field.onChange} value={field.value} className="flex gap-3">
                                             {["native", "foreigner"].map((v) => (
                                                 <label key={v} className={`flex-1 py-4 border-2 rounded-xl text-center cursor-pointer font-bold text-sm transition-all ${field.value === v ? "border-blue-600 bg-blue-50/50 text-blue-600" : "border-slate-100 bg-white text-slate-400"}`}>

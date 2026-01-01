@@ -48,3 +48,10 @@
 [00:37:57.838] Server  LOG     ✓ Compiled in 19ms
 [00:38:46.806] Server  LOG     ✓ Compiled in 19ms
 [00:38:56.182] Server  LOG     ✓ Compiled in 17ms
+[00:39:35.867] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:39:35.868] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:41:00.865] Server  LOG     ✓ Compiled in 32ms
+[00:41:05.217] Server  LOG     ✓ Compiled in 17ms
+[00:41:12.906] Server  LOG     ✓ Compiled in 31ms
+[00:45:21.502] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:45:21.502] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
