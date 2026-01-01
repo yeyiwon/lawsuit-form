@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
 
         <div className="max-w-2xl mx-auto mt-8 mb-10">
-        <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+        <p className="text-lg md:text-xl text-red-600 leading-relaxed font-medium">
             "내 정보가 범죄에 이용될 수 있습니다."
         </p>
         <p className="text-base md:text-lg text-slate-500 mt-2 leading-relaxed break-keep">

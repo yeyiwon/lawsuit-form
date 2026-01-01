@@ -46,14 +46,13 @@ export const FormInputField = <TFieldValues extends FieldValues>({
   />
 );
 
-// ❗ 여기 아래 두 부분 앞에 'export'를 추가했습니다.
 export const Required = () => <span className="text-red-500 ml-1 font-bold">*</span>;
 
 export const PrivacyPolicyBox = () => (
   <div className="rounded-2xl border border-blue-100 bg-blue-50/40 p-6 space-y-5">
     <div className="space-y-2">
       <p className="text-[14px] font-bold text-slate-800 leading-relaxed">
-        법률사무소 화음은 본 단체소송 진행을 위해 신청자의 개인정보를 수집하고자 합니다.
+        법무법인 심주엽은 본 단체소송 진행을 위해 신청자의 개인정보를 수집하고자 합니다.
       </p>
       <p className="text-[13px] text-red-600 font-black flex items-start gap-1">
         <span>•</span> <span>동의를 거부하실 수 있으나, 거부 시 소송 참여가 불가능합니다.</span>

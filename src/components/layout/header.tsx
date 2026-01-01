@@ -14,7 +14,7 @@ const NAV_MENU = [
 ];
 
 interface HeaderProps {
-    title?: string; // 외부에서 제목을 받아옴
+    title?: string;
 }
 
 export default function Header({ title }: HeaderProps) {

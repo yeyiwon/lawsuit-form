@@ -31,7 +31,6 @@ return (
         </p>
         <Button asChild className="h-16 px-12 text-lg font-extrabold bg-slate-900 hover:bg-slate-800 text-white rounded-xl shadow-lg transition-all hover:-translate-y-1">
             <Link href="/lawsuit">지금 소송 참여하기</Link>
-            {/* 여기에 링크 추가 */}
         </Button>
         </div>
         </section>
