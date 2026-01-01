@@ -16,7 +16,27 @@ export default function RootLayout({
     <html lang="ko">
       <body>
           {children}
-          <Toaster position="top-center" reverseOrder={false} />
+          <Toaster 
+            position="top-right" 
+            reverseOrder={false}
+            toastOptions={{
+              style: {
+                background: '#121212', // 블랙
+                color: '#fff',          // 화이트 글자
+                padding: '16px 20px',
+                borderRadius: '12px',
+                fontSize: '14px',
+                fontWeight: '600',
+                boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+              },
+              success: {
+                iconTheme: {
+                  primary: '#3b82f6', // 성공 아이콘은 블루로 포인트
+                  secondary: '#fff',
+                },
+              },
+            }}
+          />
       </body>
     </html>
   );

@@ -1,0 +1,3 @@
+module.exports=[63588,a=>{"use strict";var b=a.i(7997);function c(){return(0,b.jsxs)("div",{className:"flex items-center gap-2",children:[(0,b.jsx)("div",{className:"h-4 w-4 animate-spin rounded-full border-2 border-primary-600 border-t-secondary-200",children:" "}),(0,b.jsx)("p",{className:"text-lg text-secondary-500",children:" Loading ... "})]})}function d(){return(0,b.jsx)("div",{className:"flex h-screen flex-col items-center justify-center",children:(0,b.jsx)(c,{})})}a.s(["default",()=>d],63588)}];
+
+//# sourceMappingURL=app_loading_tsx_b05711b0._.js.map

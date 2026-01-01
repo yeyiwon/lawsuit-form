@@ -1,5 +1,5 @@
 "use client";
-
+import { supabase } from "../lib/supabase";
 import * as z from "zod";
 import toast from "react-hot-toast"; 
 import { useState, useEffect } from "react";
@@ -56,21 +56,50 @@ export default function LawsuitForm() {
         setIsModalOpen(true);
     };
 
-    const onSubmit = (values: FormValues) => {
-        toast.success("신청서가 정상적으로 접수되었습니다!", {
-            duration: 4000,
-            style: {
-                borderRadius: '16px',
-                background: '#333',
-                color: '#fff',
-                fontWeight: 'bold',
-            },
-        });
+    const onSubmit = async (values: FormValues) => {
+        const toastId = toast.loading("신청서를 전송 중입니다...");
 
-        localStorage.removeItem("lawsuit-form");
-        reset();
+        try {
+            const { error } = await supabase
+                .from('applications')
+                .insert([
+                    {
+                        name: values.name,
+                        phone: values.phone,
+                        birth: values.birth,
+                        email: values.email,
+                        address: values.address,
+                        address_detail: values.address_detail,
+                        privacy_agree: values.privacy_agree,
+                    }
+                ]);
+
+            if (error) throw error;
+
+            toast.success("신청서가 정상적으로 접수되었습니다!", { 
+                id: toastId,
+                duration: 4000,
+            });
+
+            localStorage.removeItem("lawsuit-form");
+            reset();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        } catch (error: unknown) {
+            console.error("DB 전송 에러:", error);
+            
+            let errorMessage = "다시 시도해주세요.";
+            if (error instanceof Error) {
+                errorMessage = error.message;
+            } else if (typeof error === 'object' && error !== null && 'message' in error) {
+                errorMessage = String((error as { message: unknown }).message);
+            }
+
+            toast.error(`전송에 실패했습니다: ${errorMessage}`, { 
+                id: toastId 
+            });
+        }
     };
-
     if (!isLoaded) return null;
 
     return (

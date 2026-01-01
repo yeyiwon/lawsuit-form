@@ -1,0 +1,1534 @@
+[00:00:00.918] Server  LOG     ✓ Ready in 709ms
+[00:00:19.896] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:19.896] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:31.631] Browser LOG     ==============================
+[00:00:31.631] Browser LOG     🚀 위임장 제출 데이터 확인
+[00:00:31.631] Browser TABLE   {"address":"서울 성동구 상원12길 14-1 (성수동1가)","address_detail":"3층","birth":"991223","email":"4576874@naver.com","name":"예이원","phone":"01021461216","privacy_agree":"agree"}
+[00:00:31.631] Browser LOG     ==============================
+[00:21:00.365] Server  LOG     ✓ Compiled in 18ms
+[00:23:51.793] Server  LOG     ✓ Compiled in 220ms
+[00:23:52.344] Server  ERROR   ⨯ Error: supabaseUrl is required.
+[00:23:55.155] Browser ERROR   uncaughtError: Error: supabaseUrl is required.
+[00:25:08.987] Server  LOG     ✓ Compiled in 25ms
+[00:25:09.387] Server  ERROR   ⨯ Error: supabaseUrl is required.
+[00:25:09.388] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:25:09.388] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/lawsuit-form.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:25:09.388] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:25:12.152] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+supabaseUrl is required.
+[00:25:12.152] Browser ERROR   uncaughtError: Error: supabaseUrl is required.
+[00:25:14.249] Server  LOG     ✓ Compiled in 15ms
+[00:25:14.630] Server  ERROR   ⨯ Error: supabaseUrl is required.
+[00:25:14.630] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:25:14.630] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/components/lawsuit-form.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:25:14.630] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:25:17.174] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+supabaseUrl is required.
+[00:25:17.174] Browser ERROR   uncaughtError: Error: supabaseUrl is required.
+[00:30:40.422] Browser ERROR   uncaughtError: Error: supabaseUrl is required.
+[00:31:27.337] Server  LOG       Reload env: .env.local
+[00:31:28.037] Server  ERROR   ⨯ Error: supabaseKey is required.
+[00:31:28.042] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:28.042] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/lib/supabase.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:31:28.184] Server  ERROR   ⨯ Error: supabaseKey is required.
+[00:31:28.184] Server  LOG     ✓ Compiled in 0ms
+[00:31:28.188] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:28.188] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:28.188] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/lib/supabase.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:31:28.188] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:31:28.309] Server  ERROR   ⨯ Error: supabaseKey is required.
+[00:31:28.477] Server  ERROR   ⨯ Error: supabaseKey is required.
+[00:31:29.083] Browser ERROR   uncaughtError: Error: Switched to client rendering because the server rendering errored:
+
+supabaseKey is required.
+[00:31:29.201] Browser ERROR   uncaughtError: Error: supabaseKey is required.
+[00:31:31.154] Browser ERROR   uncaughtError: Error: supabaseKey is required.
+[00:32:10.229] Server  LOG       Reload env: .env.local
+[00:32:10.247] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:32:10.247] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/lib/supabase.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:32:10.252] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:32:10.344] Server  LOG     ✓ Compiled in 12ms
+[00:32:10.470] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:32:10.470] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./src/lib/supabase.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:32:10.470] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:32:29.648] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:29.648] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:34:15.350] Server  LOG     ✓ Compiled in 20ms
+[00:34:23.523] Server  LOG     ✓ Compiled in 16ms
+[00:34:27.644] Server  LOG     ✓ Compiled in 21ms
+[00:40:12.804] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:40:12.804] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:41:36.543] Server  LOG     ✓ Compiled in 144ms
+[00:41:54.564] Server  LOG     ✓ Compiled in 20ms
+[00:43:07.149] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.149] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.150] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.150] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.151] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.151] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.152] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.152] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.153] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.153] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.153] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.154] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.155] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.156] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.158] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.158] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.161] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.161] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.162] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.162] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.163] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.163] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.163] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.164] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.165] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.166] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.166] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.166] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.167] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.168] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.168] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.168] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.169] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.169] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.169] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.170] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.171] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.171] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.172] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.172] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.173] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.173] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.173] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.174] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.175] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.175] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.176] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.176] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.176] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.177] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.177] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.178] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.178] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.179] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.179] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.180] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.180] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.181] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.181] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.181] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.182] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.182] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.183] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.183] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.184] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.185] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.185] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.186] Server  ERROR   ⨯ ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:43:07.186] Server  LOG     ✓ Compiled in 55ms
+[00:43:07.292] Browser ERROR   ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:43:08.150] Browser ERROR   ./src/components/hero.tsx:6:1
+Module not found: Can't resolve '@/lib/supabase'
+  4 | import { Button } from "@/components/ui/button";
+  5 | import Link from "next/link";
+> 6 | import { supabase } from "@/lib/supabase"; // 경로가 맞는지 확인하세요!
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function Hero() {
+  9 |     const [count, setCount] = useState<number | null>(null);
+
+Import map: aliased to relative './lib/supabase' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/hero.tsx
+    ./app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:43:12.708] Server  LOG     ✓ Compiled in 75ms
+[00:43:47.416] Server  LOG     ✓ Compiled in 16ms
+[00:44:17.923] Server  LOG     ✓ Compiled in 22ms
+[00:44:38.035] Server  LOG     ✓ Compiled in 22ms
+[00:45:11.159] Server  LOG     ✓ Compiled in 38ms
