@@ -39,7 +39,7 @@ export default function Hero() {
                 </p>
                 <p className="text-base md:text-lg text-slate-500 mt-2 leading-relaxed break-keep">
                     전 국민의 70%에 달하는 3,370만 건 유출 사태. <br className="hidden md:block" />
-                    법률사무소 심에서 여러분의 정당한 위자료 청구를 대리합니다.
+                    법무법인 심주엽이 여러분의 정당한 위자료 청구를 대리합니다.
                 </p>
             </div>
 
