@@ -25,9 +25,7 @@ export default function Hero() {
         <section className="w-full min-h-[60vh] flex flex-col items-center justify-center text-center py-20 px-4 bg-white">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 mb-8">
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-                <span className="text-xs font-bold text-slate-600 tracking-tight uppercase">
-                    실시간 접수 현황 확인됨
-                </span>
+                <span className="text-xs font-bold text-slate-600 tracking-tight uppercase">착수금 0원 · 온라인 접수 가능</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-black text-slate-900 leading-[1.15] tracking-tighter">
@@ -51,7 +49,6 @@ export default function Hero() {
                 </Button>
             </div>
 
-            {/* 👇 count가 null(로딩 중)이 아닐 때만 이 부분이 나타납니다 */}
             {count !== null && (
                 <div className="mt-8 flex flex-col items-center gap-2 animate-in fade-in duration-700">
                     <p className="text-sm text-slate-400">
