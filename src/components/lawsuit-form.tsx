@@ -213,7 +213,7 @@ export default function LawsuitForm() {
                             </div>
                             <div className="space-y-10">
                                 <div className="space-y-4">
-                                    <FormLabel className="font-bold text-slate-800">송달 주소 <Required /></FormLabel>
+                                    <FormLabel className="font-bold text-slate-800">송달 주소</FormLabel>
                                     {!watch("address") ? (
                                         <Button type="button" variant="outline" onClick={handleAddressSearch} className="w-full h-16 border-dashed border-2 rounded-2xl bg-white text-slate-400 font-bold">
                                             주소 검색하기
