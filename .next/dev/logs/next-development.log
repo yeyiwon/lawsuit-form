@@ -1532,3 +1532,7 @@ https://nextjs.org/docs/messages/module-not-found
 [00:44:17.923] Server  LOG     ✓ Compiled in 22ms
 [00:44:38.035] Server  LOG     ✓ Compiled in 22ms
 [00:45:11.159] Server  LOG     ✓ Compiled in 38ms
+[00:53:05.573] Server  LOG     ✓ Compiled in 38ms
+[00:53:06.153] Browser WARN    GoTrueClient@sb-rnjmtstmpxydxtfhnydo-auth-token:1 (2.89.0) 2026-01-01T15:03:00.089Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+[00:53:43.092] Server  LOG     ✓ Compiled in 20ms
+[00:53:44.159] Browser WARN    GoTrueClient@sb-rnjmtstmpxydxtfhnydo-auth-token:2 (2.89.0) 2026-01-01T15:03:37.606Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
