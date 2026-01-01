@@ -15,6 +15,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 function Logo({ className = "", iconSize = 20 }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
         href: "/",
+        id: "#logo",
         className: `flex items-center gap-2 group ${className}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -719,7 +720,7 @@ function Hero() {
                                 lineNumber: 41,
                                 columnNumber: 52
                             }, this),
-                            "법률사무소 심에서 여러분의 정당한 위자료 청구를 대리합니다."
+                            "법무법인 심주엽이 여러분의 정당한 위자료 청구를 대리합니다."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/hero.tsx",

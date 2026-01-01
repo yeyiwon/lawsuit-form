@@ -8,7 +8,7 @@ interface LogoProps {
 
 export default function Logo({ className = "", iconSize = 20 }: LogoProps) {
     return (
-    <Link href="/" className={`flex items-center gap-2 group ${className}`}>
+    <Link href="/" id="#logo"  className={`flex items-center gap-2 group ${className}`}>
         <div className="bg-slate-900 p-1.5 rounded-lg group-hover:bg-blue-600 transition-colors">
         <Scale size={iconSize} className="text-white" />
         </div>

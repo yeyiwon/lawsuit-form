@@ -129,7 +129,25 @@ export default function LawsuitForm() {
                                 <FormInputField<FormValues> formControl={form.control} name="phone" label="핸드폰 번호" placeholder="01012345678" maxLength={11} />
                                 <FormInputField<FormValues> formControl={form.control} name="birth" label="주민등록번호 앞 6자리" placeholder="850101" maxLength={6} />
                                 <div className="space-y-3">
-                                    <FormInputField<FormValues> formControl={form.control} name="email" label="이메일 주소" placeholder="example@gmail.com" />
+                                    <FormInputField<FormValues> 
+                                        formControl={form.control} 
+                                        name="email" 
+                                        label="이메일 주소" 
+                                        placeholder="example@gmail.com"/>
+                                    <div className="mt-3 bg-blue-50/50 p-5 rounded-2xl space-y-2 border border-blue-100/50">
+                                        <p className="text-[14px] font-bold text-blue-900 flex items-center gap-1.5">
+                                            📧 이메일 주소를 정확히 입력해주세요
+                                        </p>
+                                        <p className="text-[13px] text-blue-800/90 leading-relaxed">
+                                            이메일 주소를 입력하셔야 응답하신 신청서(소송위임계약서 포함)를 메일로 보내드립니다.
+                                            <br />
+                                            <span className="font-bold text-blue-600">
+                                                입력하신 정보대로 소송에 참여되니 정보를 정확하게 입력해주세요.
+                                            </span>
+                                        </p>
+                                    </div>
+                                    </div>
+                                <div>
                                 </div>
                             </div>
                         </section>

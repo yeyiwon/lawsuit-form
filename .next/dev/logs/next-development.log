@@ -11,3 +11,21 @@
 [00:07:17.950] Server  LOG     ✓ Compiled in 18ms
 [00:07:38.596] Server  LOG     ✓ Compiled in 20ms
 [00:07:40.944] Server  LOG     ✓ Compiled in 51ms
+[00:11:37.116] Server  LOG     ✓ Compiled in 53ms
+[00:13:16.578] Server  LOG     ✓ Compiled in 72ms
+[00:13:17.217] Browser ERROR   uncaughtError: ReferenceError: Scale is not defined
+[00:13:34.338] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:13:34.391] Server  LOG     ✓ Compiled in 46ms
+[00:14:35.335] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:35.336] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:20:34.054] Server  LOG     ✓ Compiled in 58ms
+[00:20:59.539] Server  LOG     ✓ Compiled in 16ms
+[00:21:05.873] Server  LOG     ✓ Compiled in 14ms
+[00:21:56.651] Server  LOG     ✓ Compiled in 65ms
+[00:22:13.796] Server  LOG     ✓ Compiled in 16ms
+[00:22:22.507] Server  LOG     ✓ Compiled in 22ms
+[00:22:51.206] Server  LOG     ✓ Compiled in 17ms
+[00:22:57.442] Server  LOG     ✓ Compiled in 16ms
+[00:23:25.111] Server  LOG     ✓ Compiled in 22ms
+[00:24:09.233] Server  LOG     ✓ Compiled in 32ms
+[00:24:22.200] Server  LOG     ✓ Compiled in 19ms

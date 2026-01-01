@@ -364,6 +364,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 function Logo({ className = "", iconSize = 20 }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         href: "/",
+        id: "#logo",
         className: `flex items-center gap-2 group ${className}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1293,19 +1294,66 @@ function LawsuitForm() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "space-y-3",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormInputField"], {
-                                                        formControl: form.control,
-                                                        name: "email",
-                                                        label: "이메일 주소",
-                                                        placeholder: "example@gmail.com"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                        lineNumber: 132,
-                                                        columnNumber: 37
-                                                    }, this)
-                                                }, void 0, false, {
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormInputField"], {
+                                                            formControl: form.control,
+                                                            name: "email",
+                                                            label: "이메일 주소",
+                                                            placeholder: "example@gmail.com"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                            lineNumber: 132,
+                                                            columnNumber: 37
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "mt-3 bg-blue-50/50 p-5 rounded-2xl space-y-2 border border-blue-100/50",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-[14px] font-bold text-blue-900 flex items-center gap-1.5",
+                                                                    children: "📧 이메일 주소를 정확히 입력해주세요"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                                    lineNumber: 138,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-[13px] text-blue-800/90 leading-relaxed",
+                                                                    children: [
+                                                                        "이메일 주소를 입력하셔야 응답하신 신청서(소송위임계약서 포함)를 메일로 보내드립니다.",
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                                            lineNumber: 143,
+                                                                            columnNumber: 45
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "font-bold text-blue-600",
+                                                                            children: "입력하신 정보대로 소송에 참여되니 정보를 정확하게 입력해주세요."
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                                            lineNumber: 144,
+                                                                            columnNumber: 45
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                                    lineNumber: 141,
+                                                                    columnNumber: 41
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                            lineNumber: 137,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
                                                     lineNumber: 131,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
+                                                    fileName: "[project]/src/components/lawsuit-form.tsx",
+                                                    lineNumber: 150,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
@@ -1329,18 +1377,18 @@ function LawsuitForm() {
                                                 "개인정보 수집·이용 동의 ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Required"], {}, void 0, false, {
                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                    lineNumber: 139,
+                                                    lineNumber: 157,
                                                     columnNumber: 97
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                            lineNumber: 139,
+                                            lineNumber: 157,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PrivacyPolicyBox"], {}, void 0, false, {
                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 158,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormField"], {
@@ -1368,7 +1416,7 @@ function LawsuitForm() {
                                                                                 id: val
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                                lineNumber: 150,
+                                                                                lineNumber: 168,
                                                                                 columnNumber: 57
                                                                             }, void 0),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1376,46 +1424,46 @@ function LawsuitForm() {
                                                                                 children: val === "agree" ? "위 내용을 확인했으며, 동의합니다" : "동의하지 않습니다"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                                lineNumber: 151,
+                                                                                lineNumber: 169,
                                                                                 columnNumber: 57
                                                                             }, void 0)
                                                                         ]
                                                                     }, val, true, {
                                                                         fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                        lineNumber: 149,
+                                                                        lineNumber: 167,
                                                                         columnNumber: 53
                                                                     }, void 0);
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                lineNumber: 144,
+                                                                lineNumber: 162,
                                                                 columnNumber: 41
                                                             }, void 0)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 161,
                                                             columnNumber: 37
                                                         }, void 0),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$form$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormMessage"], {}, void 0, false, {
                                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                            lineNumber: 159,
+                                                            lineNumber: 177,
                                                             columnNumber: 37
                                                         }, void 0)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                    lineNumber: 142,
+                                                    lineNumber: 160,
                                                     columnNumber: 33
                                                 }, void 0)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 159,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                    lineNumber: 138,
+                                    lineNumber: 156,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1430,13 +1478,13 @@ function LawsuitForm() {
                                                         "송달 주소 ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Required"], {}, void 0, false, {
                                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                            lineNumber: 167,
+                                                            lineNumber: 185,
                                                             columnNumber: 89
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                    lineNumber: 167,
+                                                    lineNumber: 185,
                                                     columnNumber: 33
                                                 }, this),
                                                 watch("address") && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1446,13 +1494,13 @@ function LawsuitForm() {
                                                     children: "주소 수정하기"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                    lineNumber: 169,
+                                                    lineNumber: 187,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                            lineNumber: 166,
+                                            lineNumber: 184,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1467,7 +1515,7 @@ function LawsuitForm() {
                                                         className: "w-5 h-5 text-blue-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                        lineNumber: 187,
+                                                        lineNumber: 205,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1475,13 +1523,13 @@ function LawsuitForm() {
                                                         children: "주소 검색하기"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                        lineNumber: 188,
+                                                        lineNumber: 206,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                lineNumber: 181,
+                                                lineNumber: 199,
                                                 columnNumber: 37
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "grid gap-4 animate-in fade-in slide-in-from-top-2",
@@ -1499,20 +1547,20 @@ function LawsuitForm() {
                                                                 className: "cursor-pointer bg-slate-50/80 group-hover:border-blue-400 group-hover:bg-blue-50/30 transition-all"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                lineNumber: 196,
+                                                                lineNumber: 214,
                                                                 columnNumber: 45
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "absolute inset-0 z-10"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                                lineNumber: 204,
+                                                                lineNumber: 222,
                                                                 columnNumber: 45
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                        lineNumber: 192,
+                                                        lineNumber: 210,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$form$2d$fields$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FormInputField"], {
@@ -1522,24 +1570,24 @@ function LawsuitForm() {
                                                         placeholder: "나머지 주소를 입력해 주세요"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                        lineNumber: 207,
+                                                        lineNumber: 225,
                                                         columnNumber: 41
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 209,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/lawsuit-form.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 197,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 183,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1549,7 +1597,7 @@ function LawsuitForm() {
                                     children: "신청하기"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/lawsuit-form.tsx",
-                                    lineNumber: 218,
+                                    lineNumber: 236,
                                     columnNumber: 25
                                 }, this)
                             ]
@@ -1581,7 +1629,7 @@ function LawsuitForm() {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/lawsuit-form.tsx",
-                lineNumber: 229,
+                lineNumber: 247,
                 columnNumber: 13
             }, this)
         ]
