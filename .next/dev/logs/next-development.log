@@ -29,3 +29,22 @@
 [00:23:25.111] Server  LOG     ✓ Compiled in 22ms
 [00:24:09.233] Server  LOG     ✓ Compiled in 32ms
 [00:24:22.200] Server  LOG     ✓ Compiled in 19ms
+[00:28:17.722] Server  LOG     ✓ Compiled in 137ms
+[00:28:26.288] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:28:27.233] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:28:32.956] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:28:47.145] Browser WARN    RadioGroup is changing from uncontrolled to controlled. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.
+[00:28:58.406] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:28:58.406] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:30:23.903] Server  LOG     ✓ Compiled in 79ms
+[00:31:18.100] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:31:18.100] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:23.675] Server  LOG     ✓ Compiled in 31ms
+[00:32:31.079] Server  LOG     ✓ Compiled in 67ms
+[00:34:29.020] Server  LOG     ✓ Compiled in 32ms
+[00:35:17.755] Server  LOG     ✓ Compiled in 150ms
+[00:35:33.653] Server  LOG     ✓ Compiled in 45ms
+[00:37:03.980] Server  LOG     ✓ Compiled in 76ms
+[00:37:57.838] Server  LOG     ✓ Compiled in 19ms
+[00:38:46.806] Server  LOG     ✓ Compiled in 19ms
+[00:38:56.182] Server  LOG     ✓ Compiled in 17ms
