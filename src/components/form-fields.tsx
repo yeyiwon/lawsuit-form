@@ -66,7 +66,7 @@ export const PrivacyPolicyBox = () => (
             <>
               성명, 생년월일, 주소, 휴대전화번호, 이메일 주소, <br className="hidden sm:block" /> 
               <span className="text-blue-700/80 font-medium">(미성년자)</span> 친권자 정보, 
-              <span className="text-blue-700/80 font-medium">(외국인)</span> 국적, 계좌번호
+              <span className="text-blue-700/80 font-medium">(외국인)</span> 국적 및 외국인등록번호
             </>
           ) 
         },

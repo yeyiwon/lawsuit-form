@@ -215,7 +215,7 @@ export default function LawsuitForm() {
                                 <div className="space-y-4">
                                     <FormLabel className="font-bold text-slate-800">송달 주소</FormLabel>
                                     {!watch("address") ? (
-                                        <Button type="button" variant="outline" onClick={handleAddressSearch} className="w-full h-16 border-dashed border-2 rounded-2xl bg-white text-slate-400 font-bold">
+                                        <Button type="button" variant="outline" onClick={handleAddressSearch} className="cursor-pointer w-full h-16 border-dashed border-2 rounded-2xl bg-white text-slate-400 font-bold">
                                             주소 검색하기
                                         </Button>
                                     ) : (
@@ -249,7 +249,7 @@ export default function LawsuitForm() {
                         <Button 
                             type="submit" 
                             disabled={!form.formState.isValid} 
-                            className="w-full h-20 text-xl font-black rounded-3xl bg-blue-600 text-white shadow-xl hover:bg-blue-700 disabled:bg-slate-400 transition-all active:scale-[0.98]"
+                            className="cursor-pointer w-full h-20 text-xl font-black rounded-3xl bg-blue-600 text-white shadow-xl hover:bg-blue-700 disabled:bg-slate-400 transition-all active:scale-[0.98]"
                         >
                             신청서 제출하기
                         </Button>

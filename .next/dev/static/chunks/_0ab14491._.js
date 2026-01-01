@@ -855,7 +855,7 @@ const PrivacyPolicyBox = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5
                                     lineNumber: 69,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)),
-                                " 국적, 계좌번호"
+                                " 국적 및 외국인등록번호"
                             ]
                         }, void 0, true)
                     },
@@ -1898,7 +1898,7 @@ function LawsuitForm() {
                                                             type: "button",
                                                             variant: "outline",
                                                             onClick: handleAddressSearch,
-                                                            className: "w-full h-16 border-dashed border-2 rounded-2xl bg-white text-slate-400 font-bold",
+                                                            className: "cursor-pointer w-full h-16 border-dashed border-2 rounded-2xl bg-white text-slate-400 font-bold",
                                                             children: "주소 검색하기"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/lawsuit-form.tsx",
@@ -2021,7 +2021,7 @@ function LawsuitForm() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                     type: "submit",
                                     disabled: !form.formState.isValid,
-                                    className: "w-full h-20 text-xl font-black rounded-3xl bg-blue-600 text-white shadow-xl hover:bg-blue-700 disabled:bg-slate-400 transition-all active:scale-[0.98]",
+                                    className: "cursor-pointer w-full h-20 text-xl font-black rounded-3xl bg-blue-600 text-white shadow-xl hover:bg-blue-700 disabled:bg-slate-400 transition-all active:scale-[0.98]",
                                     children: "신청서 제출하기"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/lawsuit-form.tsx",
