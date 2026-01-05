@@ -8,7 +8,6 @@ import { ContractContent } from "./contract-content";
 import { Control, FieldPath } from "react-hook-form";
 import { FormValues } from "./form-schema";
 
-// 공통 섹션 헤더 컴포넌트
 const SectionHeader = ({ title, desc }: { title: string; desc?: string }) => (
     <div className="mb-6">
         <h2 className="text-lg font-black tracking-tight">{title}</h2>
@@ -30,6 +29,7 @@ export const QualificationSection = ({ control }: { control: Control<FormValues>
     ];
 
     return (
+        // 1. 신청 자격 섹션
         <section className="space-y-10">
             <SectionHeader title="신청 자격 확인" desc="정확한 소송 참여를 위해 아래 항목을 체크해주세요." />
             <div className="space-y-10">
@@ -44,7 +44,13 @@ export const QualificationSection = ({ control }: { control: Control<FormValues>
                                 <FormControl>
                                     <RadioGroup onValueChange={field.onChange} value={field.value} className="flex gap-2">
                                         {(["yes", "no"] as const).map((v) => (
-                                            <label key={v} className={`flex-1 py-4 rounded-xl border-2 text-center cursor-pointer transition-all font-bold text-sm ${field.value === v ? "border-blue-600 bg-blue-50/50 text-blue-600" : "border-slate-100 bg-white text-slate-400 hover:border-slate-200"}`}>
+                                            <label 
+                                                key={v} 
+                                                className={`flex-1 py-4 rounded-xl border-2 text-center cursor-pointer transition-all duration-200 font-bold text-sm active:scale-[0.96] 
+                                                ${field.value === v 
+                                                    ? (v === 'yes' ? "border-blue-600 bg-blue-50/50 text-blue-600 shadow-inner" : "border-red-500 bg-red-50/50 text-red-500 shadow-inner") 
+                                                    : "border-slate-100 bg-white text-slate-400 hover:border-slate-200 shadow-sm"}`}
+                                            >
                                                 <RadioGroupItem value={v} className="sr-only" /> {v === "yes" ? "예" : "아니오"}
                                             </label>
                                         ))}
@@ -78,8 +84,7 @@ export const PrivacyAgreeSection = ({ control }: { control: Control<FormValues> 
                         <span className={`text-sm font-bold ${field.value === 'agree' ? 'text-blue-600' : 'text-slate-500'}`}>
                             위 내용을 확인했으며, 이에 동의합니다
                         </span>
-                        
-                        {/* 동그란 체크박스 버튼 느낌 추가 */}
+
                         <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
                             field.value === 'agree' 
                             ? 'bg-blue-600 border-blue-600' 
@@ -168,26 +173,25 @@ export const AddressSection = ({ control, currentAddress, onSearch }: { control:
         <div className="flex justify-between items-end">
             <SectionHeader title="송달 주소" desc="서류를 송달받을 도로명 주소입니다." />
             {currentAddress && (
-                <button type="button" onClick={onSearch} className="text-[12px] font-black text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full mb-1">
+                <button type="button" onClick={onSearch} className="text-[12px] font-black text-blue-600 bg-blue-50 px-4 py-2 rounded-full active:scale-90 transition-transform">
                     주소 변경
                 </button>
             )}
         </div>
         <div className="space-y-3">
             {!currentAddress ? (
-                <Button type="button" variant="outline" onClick={onSearch} className="cursor-pointer w-full h-20 border-dashed border-2 rounded-2xl bg-slate-50 border-slate-200 text-slate-500 font-bold hover:bg-blue-50 transition-all flex flex-col gap-1 group shadow-sm">
-                    <span className="text-[15px]">주소 검색하기</span>
-                    <span className="text-[11px] font-medium text-slate-400 group-hover:text-blue-400">클릭하여 주소를 입력해 주세요</span>
+                <Button 
+                    type="button" 
+                    variant="outline" 
+                    onClick={onSearch} 
+                    className="cursor-pointer w-full h-24 border-dashed border-2 rounded-2xl bg-white border-blue-600 font-bold active:scale-[0.98] transition-all flex flex-col gap-1 shadow-md shadow-blue-100"
+                >
+                    <span className="text-[16px]">주소 검색하기</span>
+                    <span className="text-[11px] font-medium text-blue-400">클릭하여 주소를 입력해 주세요</span>
                 </Button>
             ) : (
                 <div className="grid gap-3">
-                    <FormInputField 
-                        control={control} 
-                        name="address" 
-                        label="" 
-                        readOnly 
-                        className="bg-slate-50 border-slate-200 text-slate-900 font-semibold h-auto py-4 whitespace-normal break-keep leading-relaxed cursor-default" 
-                    />
+                    <FormInputField control={control} name="address" label="" readOnly className="bg-slate-50 border-slate-200 shadow-inner h-auto py-5" />
                     <FormInputField control={control} name="address_detail" label="" placeholder="나머지 상세 주소를 입력하세요" />
                 </div>
             )}
