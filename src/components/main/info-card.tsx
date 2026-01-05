@@ -10,7 +10,7 @@ import {
   Clock
 } from "lucide-react";
 
-import FadeIn from "./layout/fade-in";
+import FadeIn from "../layout/fade-in";
 
 export default function InfoCards() {
     const cardStyles = "border-none shadow-lg hover:shadow-xl transition-all duration-300 bg-white overflow-hidden flex flex-col h-full cursor-pointer";

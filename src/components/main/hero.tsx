@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { supabase } from "../lib/supabase"; 
+import { supabase } from "../../lib/supabase"; 
 
 export default function Hero() {
     const [count, setCount] = useState<number | null>(null);
@@ -35,7 +35,7 @@ export default function Hero() {
 
             <div className="max-w-2xl mx-auto mt-8 mb-10">
                 <p className="text-lg md:text-xl text-red-600 font-extrabold leading-relaxed">
-                    "내 정보가 범죄에 이용될 수 있습니다."
+                    &quot;내 정보가 범죄에 이용될 수 있습니다.&quot;
                 </p>
                 <p className="text-base md:text-lg text-slate-500 mt-2 leading-relaxed break-keep">
                     전 국민의 70%에 달하는 3,370만 건 유출 사태. <br className="hidden md:block" />

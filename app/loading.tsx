@@ -7,7 +7,7 @@ export default function Loading() {
         
         <div className="text-center mb-6">
           <h2 className="text-[16px] font-black text-slate-900 tracking-tight mb-1">
-            법무법인 심주엽
+            법률사무소 심주엽
           </h2>
           <div className="flex items-center justify-center gap-1.5">
             <span className="text-[10px] font-bold text-blue-600 tracking-[0.2em] uppercase">

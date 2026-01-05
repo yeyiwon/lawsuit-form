@@ -8,7 +8,7 @@ return (
         
         <div className="flex items-center gap-2 mb-6">
             <Scale className="h-5 w-5 text-slate-400" />
-            <span className="text-lg font-bold text-slate-900 tracking-tight">법무법인</span>
+            <span className="text-lg font-bold text-slate-900 tracking-tight">법률사무소 심주엽</span>
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-500 mb-8">

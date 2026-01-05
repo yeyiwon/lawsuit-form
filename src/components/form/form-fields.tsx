@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils"; 
 
 interface FormInputFieldProps<TFieldValues extends FieldValues> {
-  formControl: Control<TFieldValues>;
+  control: Control<TFieldValues>;
   name: FieldPath<TFieldValues>;
   label: string;
   placeholder?: string; 
@@ -14,7 +14,7 @@ interface FormInputFieldProps<TFieldValues extends FieldValues> {
 }
 
 export const FormInputField = <TFieldValues extends FieldValues>({
-  formControl,
+  control,
   name,
   label,
   placeholder,
@@ -23,24 +23,25 @@ export const FormInputField = <TFieldValues extends FieldValues>({
   readOnly = false,
 }: FormInputFieldProps<TFieldValues>) => (
   <FormField
-    control={formControl}
+    control={control}
     name={name}
     render={({ field }) => (
-      <FormItem>
-        <FormLabel className="font-bold text-slate-700">{label}</FormLabel>
+      <FormItem className="space-y-2">
+        {label && <FormLabel className="font-bold text-slate-700">{label}</FormLabel>}
         <FormControl>
           <Input
             placeholder={placeholder}
             maxLength={maxLength}
             readOnly={readOnly}
             {...field}
+            value={field.value ?? ""}
             className={cn(
-              "h-14 rounded-xl border-slate-200 focus:ring-blue-500", 
+              "h-14 rounded-xl border-slate-200 focus:ring-blue-500 placeholder:text-sm", 
               className
             )}
           />
         </FormControl>
-        <FormMessage />
+        <FormMessage className="text-red-500 font-bold text-xs" />
       </FormItem>
     )}
   />
@@ -52,7 +53,7 @@ export const PrivacyPolicyBox = () => (
   <div className="rounded-2xl border border-blue-100 bg-blue-50/40 p-6 space-y-5">
     <div className="space-y-2">
       <p className="text-[14px] font-bold text-slate-800 leading-relaxed">
-        법무법인 심주엽은 본 단체소송 진행을 위해 신청자의 개인정보를 수집하고자 합니다.
+        법률사무소 심주엽은 본 단체소송 진행을 위해 신청자의 개인정보를 수집하고자 합니다.
       </p>
       <p className="text-[13px] text-red-600 font-black flex items-start gap-1">
         <span>•</span> <span>동의를 거부하실 수 있으나, 거부 시 소송 참여가 불가능합니다.</span>
@@ -77,7 +78,7 @@ export const PrivacyPolicyBox = () => (
           <span className="font-bold text-slate-500 w-24 shrink-0 text-xs uppercase tracking-tight">{item.label}</span>
           <span className="text-slate-700 leading-snug">{item.content}</span>
         </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );

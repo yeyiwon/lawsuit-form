@@ -14,7 +14,7 @@ export default function Logo({ className = "", iconSize = 20 }: LogoProps) {
         </div>
     
         <span className="text-xl font-black tracking-tight text-slate-900">
-        법무법인 <span className="text-blue-600">심주엽</span>
+        법률사무소 <span className="text-blue-600">심주엽</span>
         </span>
     </Link>
     );

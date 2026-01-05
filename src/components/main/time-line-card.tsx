@@ -1,5 +1,5 @@
 "use client";
-import FadeIn from "./layout/fade-in";
+import FadeIn from "../layout/fade-in";
 
 export default function Timeline() {
 const events = [

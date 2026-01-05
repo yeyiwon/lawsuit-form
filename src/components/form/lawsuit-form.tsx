@@ -1,0 +1,115 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
+import { supabase } from "../../lib/supabase";
+
+import { Form } from "@/components/ui/form";
+import { Button } from "@/components/ui/button";
+import Header from "../layout/header";
+import { AddressModal } from "./address-modal";
+
+import { formSchema, FormValues } from "./form-schema";
+import { 
+    QualificationSection, 
+    PrivacyAgreeSection, 
+    ApplicantInfoSection, 
+    GuardianSection, 
+    AddressSection, 
+    ContractSection 
+} from "./form-sections";
+
+export default function LawsuitForm() {
+    const router = useRouter();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const form = useForm<FormValues>({
+        resolver: zodResolver(formSchema),
+        mode: "onChange",
+        defaultValues: { 
+            has_leak_notice: "", is_member_during_period: "",
+            name: "", phone: "", birth: "", email: "", 
+            nationality: "native", has_guardian: "no",
+            guardian_name: "", guardian_phone: "", guardian_birth: "", guardian_relation: "",
+            address: "", address_detail: "", privacy_agree: "", contract_confirm: "",
+        },
+    });
+
+    const { watch, setValue, setFocus, reset, control, formState: { isValid } } = form;
+
+    const nationality = watch("nationality");
+    const hasGuardian = watch("has_guardian");
+    const currentAddress = watch("address");
+
+    useEffect(() => { setIsLoaded(true); }, []);
+
+    const onSubmit: SubmitHandler<FormValues> = async (values) => {
+        const toastId = toast.loading("신청서를 제출 중입니다...");
+        try {
+            const { error } = await supabase.from('applications').insert([values]);
+            if (error) throw error;
+            
+            toast.success("접수되었습니다!", { id: toastId });
+            reset();
+            setTimeout(() => router.push("/complete"), 500);
+        } catch (error: unknown) {
+            const message = error instanceof Error ? error.message : "전송 오류";
+            toast.error("실패: " + message, { id: toastId });
+        }
+    };
+
+    if (!isLoaded) return null;
+
+    return (
+        <div className="min-h-screen bg-white font-sans antialiased text-slate-900">
+            <Header title="단체소송 신청서" />
+
+            <main className="max-w-xl mx-auto px-6 pt-32 pb-40">
+                <header className="mb-20">
+                    <h1 className="text-3xl font-black tracking-tight leading-tight">
+                        쿠팡 개인정보 유출 피해<br />
+                        <span className="text-blue-600">단체소송 신청서</span>
+                    </h1>
+                </header>
+
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-24">
+                        <QualificationSection control={control} />
+                        <PrivacyAgreeSection control={control} />
+                        <ApplicantInfoSection control={control} nationality={nationality} />
+                        <GuardianSection control={control} hasGuardian={hasGuardian} />
+                        <AddressSection 
+                            control={control} 
+                            currentAddress={currentAddress} 
+                            onSearch={() => setIsModalOpen(true)} 
+                        />
+                        <ContractSection control={control} />
+
+                        <Button 
+                            type="submit" 
+                            disabled={!isValid} 
+                            className={`w-full h-20 text-xl font-black rounded-2xl transition-all shadow-xl ${
+                                isValid ? "bg-blue-600 text-white hover:scale-[1.01]" : "bg-slate-200 text-slate-400"
+                            }`}
+                        >
+                            신청서 제출하기
+                        </Button>
+                    </form>
+                </Form>
+            </main>
+
+            <AddressModal 
+                isOpen={isModalOpen} 
+                onClose={() => setIsModalOpen(false)} 
+                onSelect={(addr) => { 
+                    setValue("address", addr, { shouldValidate: true }); 
+                    setTimeout(() => setFocus("address_detail"), 100);
+                }} 
+            />
+        </div>
+    );
+}

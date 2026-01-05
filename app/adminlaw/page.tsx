@@ -1,11 +1,10 @@
-import AdminDashboard from "@/src/components/admin-page";
+import AdminDashboard from "@/src/components/admin/admin-page";
 
 
-export default function AdminLaw99Page() {
+export default function AdminLawPage() {
     return (
-
-       <>
-       <AdminDashboard />
-       </>
+        <>
+        <AdminDashboard />
+        </>
     );
 }

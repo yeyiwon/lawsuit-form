@@ -1,4 +1,4 @@
-import LawsuitForm from "@/src/components/lawsuit-form"
+import LawsuitForm from "@/src/components/form/lawsuit-form"
 
 export default function Lawsuit() {
     return(

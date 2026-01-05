@@ -2,11 +2,11 @@
 import Footer from "@/src/components/layout/footer";
 import Header from "@/src/components/layout/header";
 import MainContainer from "@/src/components/layout/main-container";
-import FAQ from "@/src/components/faq-section";
-import Hero from "@/src/components/hero";
-import InfoCards from "@/src/components/info-card";
-import Timeline from "@/src/components/time-line-card";
-import GuideCTA from "@/src/components/guide-cta";
+import FAQ from "@/src/components/main/faq-section";
+import Hero from "@/src/components/main/hero";
+import InfoCards from "@/src/components/main/info-card";
+import Timeline from "@/src/components/main/time-line-card";
+import GuideCTA from "@/src/components/main/guide-cta";
 import ScrollToTop from "@/src/ui/scroll-to-top";
 
 export default function Home() {
