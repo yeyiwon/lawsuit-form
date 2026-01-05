@@ -74,7 +74,10 @@ export default function AdminDashboard() {
         const worksheet = XLSX.utils.json_to_sheet(excelData);
         const workbook = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbook, worksheet, "신청자명단");
-        XLSX.writeFile(workbook, `쿠팡소송_명단_${new Date().toISOString().slice(0, 10)}.xlsx`);
+        const fileName = `쿠팡소송_명단_${new Date().toISOString().slice(0, 10)}.xlsx`;
+        XLSX.writeFile(workbook, fileName, { compression: true, bookType: 'xlsx' });
+        
+        toast.success("엑셀 다운로드 완료");
     };
 
     const totalPages = Math.ceil(data.length / itemsPerPage);
