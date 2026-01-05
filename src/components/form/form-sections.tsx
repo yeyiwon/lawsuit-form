@@ -168,8 +168,16 @@ export const GuardianSection = ({ control, hasGuardian }: { control: Control<For
 );
 
 // 5. 주소 입력 섹션
-export const AddressSection = ({ control, currentAddress, onSearch }: { control: Control<FormValues>, currentAddress: string, onSearch: () => void }) => (
-    <section className="space-y-4 pt-6 border-t border-slate-100">
+export const AddressSection = ({ 
+    control, 
+    currentAddress, 
+    onSearch 
+}: { 
+    control: Control<FormValues>, 
+    currentAddress: string, 
+    onSearch: () => void 
+}) => (
+    <section className="space-y-4 pt-8 border-t border-slate-100">
         <SectionHeader 
             title="송달 주소" 
             desc="서류를 송달받을 도로명 주소입니다." 
@@ -180,53 +188,55 @@ export const AddressSection = ({ control, currentAddress, onSearch }: { control:
                 <Button 
                     type="button" 
                     onClick={onSearch} 
-                    className="cursor-pointer w-full h-20 flex items-center justify-between px-6 bg-slate-100 border border-slate-200 rounded-2xl hover:bg-slate-200 hover:border-slate-300 active:scale-[0.99] transition-all group"
+                    className="cursor-pointer w-full h-24 flex items-center justify-between px-6 bg-slate-50 border-2 border-dashed border-slate-400 rounded-3xl hover:bg-slate-100 hover:border-slate-500 active:scale-[0.98] transition-all group"
                 >
                     <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-center shadow-sm group-hover:border-blue-300">
-                            <Search className="w-5 h-5 text-slate-800 group-hover:text-blue-600 transition-colors" />
+                        <div className="w-12 h-12 bg-white border border-slate-100 rounded-2xl flex items-center justify-center shadow-sm group-hover:shadow-md transition-all">
+                            <Search className="w-6 h-6 text-slate-400 group-hover:text-blue-600 transition-colors" />
                         </div>
                         <div className="flex flex-col items-start">
-                            <span className="text-[15px] font-bold text-slate-900">도로명 주소 검색</span>
-                            <span className="text-[12px] text-slate-400 font-medium">클릭하여 주소를 입력해 주세요</span>
+                            <span className="text-[16px] font-black text-slate-900">주소 검색</span>
+                            <span className="text-[12px] text-slate-400 font-bold">도로명 주소로 검색해 주세요</span>
                         </div>
                     </div>
-
                 </Button>
             ) : (
-                <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <div 
-                        onClick={onSearch}
-                        className="relative flex flex-col gap-1 p-5 bg-blue-50/30 border border-blue-100 rounded-2xl cursor-pointer hover:bg-blue-50 transition-all group"
-                    >
-                        <div className="flex items-center justify-between mb-1">
-                            <div className="flex items-center gap-1.5">
-                                <CheckCircle2 className="w-4 h-4 text-blue-600" />
-                                <span className="text-[11px] font-black text-blue-600 uppercase tracking-wider">Selected Address</span>
-                            </div>
-                            <div className="flex items-center gap-1 text-[11px] font-bold text-slate-400 group-hover:text-blue-600 transition-colors">
+                <div className="space-y-4 animate-in fade-in zoom-in-95 duration-400">
+                    <div className="relative overflow-hidden group">
+                        <div 
+                            onClick={onSearch}
+                            className="flex flex-col gap-2 p-6 bg-blue-50/50 border-2 border-blue-100 rounded-3xl cursor-pointer hover:border-blue-300 hover:bg-blue-50 transition-all"
+                        >
+
+                            <div className="absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1.5 bg-white border border-blue-100 rounded-full shadow-sm text-[11px] font-black text-blue-600 hover:bg-blue-600 hover:text-white transition-all active:scale-90">
                                 <RefreshCw className="w-3 h-3" />
                                 재검색
                             </div>
-                        </div>
-                        
-                        <div className="flex items-start gap-2">
-                            <MapPin className="w-4 h-4 text-slate-400 mt-1 shrink-0" />
-                            <span className="text-[16px] font-bold text-slate-900 leading-snug">
+                            
+                            <div className="flex items-center gap-2 mb-1">
+                                <div className="p-1.5 bg-blue-600 rounded-lg">
+                                    <MapPin className="w-3.5 h-3.5 text-white" />
+                                </div>
+                                <span className="text-[11px] font-black text-blue-600/60 uppercase tracking-widest">선택된 주소</span>
+                            </div>
+                            
+                            <span className="text-[17px] font-black text-slate-900 leading-tight pr-16">
                                 {currentAddress}
                             </span>
                         </div>
                         
-                        <input type="hidden" {...control.register?.("address")} value={currentAddress} />
+                        {/* Hidden input for react-hook-form */}
+                        <input type="hidden" {...control.register("address")} value={currentAddress} />
                     </div>
                     
-                    <div className="relative">
+                    {/* 상세 주소 입력창 (조금 더 강조된 디자인) */}
+                    <div className="relative animate-in slide-in-from-top-4 duration-500 delay-150">
                         <FormInputField 
                             control={control} 
                             name="address_detail" 
                             label="" 
-                            placeholder="상세 주소(건물명, 동·호수 등)를 입력해 주세요" 
-                            className="h-14 bg-white border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-50 rounded-2xl transition-all font-medium"
+                            placeholder="동, 호수 등 상세 주소를 입력하세요" 
+                            className="h-16 bg-white border-2 border-slate-100 focus:border-blue-500 focus:ring-8 focus:ring-blue-50 rounded-2xl transition-all font-bold text-[15px] px-6 shadow-sm"
                         />
                     </div>
                 </div>
