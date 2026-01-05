@@ -38,7 +38,7 @@ export function ContractContent() {
             </div>
             </div>
 
-            {/* 본문 시작 */}
+
             <div className="space-y-10 text-[13px] leading-[1.8] text-slate-700">
             
             <div className="space-y-1">
@@ -47,8 +47,6 @@ export function ContractContent() {
             </div>
 
             <p className="text-center text-slate-400 my-8">위 당사자들은 위 표시 사건의 처리에 관한 위임계약을 다음과 같이 체결합니다.</p>
-
-            {/* 제1조 ~ 제16조 전문 */}
             <section className="space-y-8">
                 <div>
                 <h4 className="font-bold text-slate-900 mb-1">제1조【목 적】</h4>
