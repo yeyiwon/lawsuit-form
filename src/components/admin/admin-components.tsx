@@ -12,8 +12,8 @@ export const AdminLogin = ({
     setPassword: (v: string) => void; 
     handleLogin: () => void; 
 }) => (
-    <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC]">
-        <div className="p-10 bg-white rounded-[40px] shadow-sm border border-slate-100 w-full max-w-sm text-center">
+    <div className="flex items-center justify-center min-h-screen bg-[#F8FAFC] px-6">
+        <div className="p-10 bg-white rounded-md shadow-sm border border-slate-100 w-full max-w-sm text-center">
             <h1 className="text-2xl font-black mb-8 text-slate-900">관리자 전용</h1>
             <Input 
                 type="password" 
