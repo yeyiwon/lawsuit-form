@@ -22,6 +22,9 @@ import {
     ContractSection 
 } from "./form-sections";
 
+const STORAGE_KEY = "lawsuit_form_draft";
+const EXPIRE_TIME = 24 * 60 * 60 * 1000; // 24시간
+
 export default function LawsuitForm() {
     const router = useRouter();
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,30 +44,49 @@ export default function LawsuitForm() {
 
     const { watch, setValue, setFocus, reset, control, formState: { isValid } } = form;
 
-    const nationality = watch("nationality");
-    const hasGuardian = watch("has_guardian");
-    const currentAddress = watch("address");
+    // 실시간 값 감시
+    const formData = watch();
+    const { nationality, has_guardian: hasGuardian, address: currentAddress } = formData;
 
+    // 1. 초기화: 데이터 복구 및 브라우저 설정
     useEffect(() => {
-        window.scrollTo(0, 0);
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
+        const savedItem = localStorage.getItem(STORAGE_KEY);
+        
+        if (savedItem) {
+            try {
+                const { data, timestamp }: { data: FormValues; timestamp: number } = JSON.parse(savedItem);
+                const isExpired = new Date().getTime() - timestamp > EXPIRE_TIME;
+
+                if (isExpired) {
+                    localStorage.removeItem(STORAGE_KEY);
+                } else {
+                    // loop를 돌며 setValue를 쓰는 대신 reset을 사용하여 any 없이 타입 안전하게 복구
+                    reset(data);
+                }
+            } catch (e) {
+                console.error("Failed to parse saved data", e);
+            }
         }
 
+        window.scrollTo(0, 0);
         setIsLoaded(true);
-        return () => {
-            if ('scrollRestoration' in history) {
-                history.scrollRestoration = 'auto';
-            }
-        };
-    }, []);
+    }, [reset]);
+
+    // 2. 실시간 저장: 데이터 변경 시 로컬스토리지 동기화
+    useEffect(() => {
+        if (isLoaded) {
+            const draft = { data: formData, timestamp: new Date().getTime() };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(draft));
+        }
+    }, [formData, isLoaded]);
 
     const onSubmit: SubmitHandler<FormValues> = async (values) => {
         const toastId = toast.loading("신청서를 제출 중입니다...");
         try {
             const { error } = await supabase.from('applications').insert([values]);
             if (error) throw error;
-            
+
+            localStorage.removeItem(STORAGE_KEY);
             toast.success("접수되었습니다!", { id: toastId });
             reset();
             setTimeout(() => router.push("/complete"), 500);
@@ -80,7 +102,7 @@ export default function LawsuitForm() {
         <div className="min-h-screen bg-white font-sans antialiased text-slate-900">
             <Header title="단체소송 신청서" />
 
-            <main className="max-w-xl mx-auto px-6 pt-32 pb-40">
+            <main className="max-w-xl mx-auto px-6 pt-32 pb-20">
                 <header className="mb-20">
                     <h1 className="text-3xl font-black tracking-tight leading-tight">
                         쿠팡 개인정보 유출 피해<br />
@@ -105,7 +127,7 @@ export default function LawsuitForm() {
                             type="submit" 
                             disabled={!isValid} 
                             className={`w-full h-20 text-xl font-black rounded-2xl transition-all shadow-xl ${
-                                isValid ? "bg-blue-600 text-white hover:scale-[1.01]" : "bg-slate-200 text-slate-400"
+                                isValid ? "bg-blue-600 text-white hover:scale-[1.01]" : "bg-slate-100 text-slate-400"
                             }`}
                         >
                             신청서 제출하기
@@ -113,6 +135,12 @@ export default function LawsuitForm() {
                     </form>
                 </Form>
             </main>
+            
+            <div className="flex justify-center pb-12">
+                <p className="text-[10px] font-bold text-slate-300 tracking-[0.4em] uppercase">
+                    Lawfirm Sim Jooyeop
+                </p>
+            </div>
 
             <AddressModal 
                 isOpen={isModalOpen} 

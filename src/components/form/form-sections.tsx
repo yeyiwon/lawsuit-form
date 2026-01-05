@@ -7,7 +7,7 @@ import { FormInputField, PrivacyPolicyBox } from "./form-fields";
 import { ContractContent } from "./contract-content";
 import { Control, FieldPath } from "react-hook-form";
 import { FormValues } from "./form-schema";
-
+import { MapPin, Search, RefreshCw, CheckCircle2 } from "lucide-react";
 const SectionHeader = ({ title, desc }: { title: string; desc?: string }) => (
     <div className="mb-6">
         <h2 className="text-lg font-black tracking-tight">{title}</h2>
@@ -30,7 +30,7 @@ export const QualificationSection = ({ control }: { control: Control<FormValues>
 
     return (
         // 1. 신청 자격 섹션
-        <section className="space-y-10">
+        <section className="space-y-4 pt-6">
             <SectionHeader title="신청 자격 확인" desc="정확한 소송 참여를 위해 아래 항목을 체크해주세요." />
             <div className="space-y-10">
                 {qualificationFields.map((f) => (
@@ -67,7 +67,7 @@ export const QualificationSection = ({ control }: { control: Control<FormValues>
 
 // 2. 개인정보 동의 섹션
 export const PrivacyAgreeSection = ({ control }: { control: Control<FormValues> }) => (
-    <section className="space-y-10 pt-10 border-t border-slate-100">
+    <section className="space-y-4 pt-6 border-t border-slate-100">
         <SectionHeader title="개인정보 수집 동의" />
         <PrivacyPolicyBox />
         <FormField control={control} name="privacy_agree" render={({ field }) => (
@@ -102,7 +102,7 @@ export const PrivacyAgreeSection = ({ control }: { control: Control<FormValues> 
 
 // 3. 신청인 정보 섹션
 export const ApplicantInfoSection = ({ control, nationality }: { control: Control<FormValues>, nationality: string }) => (
-    <section className="space-y-10 pt-10 border-t border-slate-100">
+    <section className="space-y-4 pt-6 border-t border-slate-100">
         <SectionHeader title="신청인 상세 정보" />
         <div className="grid gap-8">
             <FormInputField control={control} name="name" label="성명" placeholder="쿠팡 가입자 본인 성함" />
@@ -142,7 +142,7 @@ export const ApplicantInfoSection = ({ control, nationality }: { control: Contro
 
 // 4. 법정대리인 섹션
 export const GuardianSection = ({ control, hasGuardian }: { control: Control<FormValues>, hasGuardian: string }) => (
-    <section className="space-y-10 pt-10 border-t border-slate-100">
+    <section className="space-y-4 pt-6 border-t border-slate-100">
         <SectionHeader title="법정대리인 정보" desc="(미성년자 전용)" />
         <FormField control={control} name="has_guardian" render={({ field }) => (
             <FormItem className="space-y-4">
@@ -167,44 +167,79 @@ export const GuardianSection = ({ control, hasGuardian }: { control: Control<For
     </section>
 );
 
-// 5. 주소 섹션
+// 5. 주소 입력 섹션
 export const AddressSection = ({ control, currentAddress, onSearch }: { control: Control<FormValues>, currentAddress: string, onSearch: () => void }) => (
-    <section className="space-y-8 pt-10 border-t border-slate-100">
-        <div className="flex justify-between items-end">
-            <SectionHeader title="송달 주소" desc="서류를 송달받을 도로명 주소입니다." />
-            {currentAddress && (
-                <button type="button" onClick={onSearch} className="text-[12px] font-black text-blue-600 bg-blue-50 px-4 py-2 rounded-full active:scale-90 transition-transform">
-                    주소 변경
-                </button>
-            )}
-        </div>
+    <section className="space-y-4 pt-6 border-t border-slate-100">
+        <SectionHeader 
+            title="송달 주소" 
+            desc="서류를 송달받을 도로명 주소입니다." 
+        />
+
         <div className="space-y-3">
             {!currentAddress ? (
                 <Button 
                     type="button" 
-                    variant="outline" 
                     onClick={onSearch} 
-                    className="cursor-pointer w-full h-24 border-dashed border-2 rounded-2xl bg-white border-blue-600 font-bold active:scale-[0.98] transition-all flex flex-col gap-1 shadow-md shadow-blue-100"
+                    className="cursor-pointer w-full h-20 flex items-center justify-between px-6 bg-slate-100 border border-slate-200 rounded-2xl hover:bg-slate-200 hover:border-slate-300 active:scale-[0.99] transition-all group"
                 >
-                    <span className="text-[16px]">주소 검색하기</span>
-                    <span className="text-[11px] font-medium text-blue-400">클릭하여 주소를 입력해 주세요</span>
+                    <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 bg-slate-50 border border-slate-100 rounded-xl flex items-center justify-center shadow-sm group-hover:border-blue-300">
+                            <Search className="w-5 h-5 text-slate-800 group-hover:text-blue-600 transition-colors" />
+                        </div>
+                        <div className="flex flex-col items-start">
+                            <span className="text-[15px] font-bold text-slate-900">도로명 주소 검색</span>
+                            <span className="text-[12px] text-slate-400 font-medium">클릭하여 주소를 입력해 주세요</span>
+                        </div>
+                    </div>
+
                 </Button>
             ) : (
-                <div className="grid gap-3">
-                    <FormInputField control={control} name="address" label="" readOnly className="bg-slate-50 border-slate-200 shadow-inner h-auto py-5" />
-                    <FormInputField control={control} name="address_detail" label="" placeholder="나머지 상세 주소를 입력하세요" />
+                <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
+                    <div 
+                        onClick={onSearch}
+                        className="relative flex flex-col gap-1 p-5 bg-blue-50/30 border border-blue-100 rounded-2xl cursor-pointer hover:bg-blue-50 transition-all group"
+                    >
+                        <div className="flex items-center justify-between mb-1">
+                            <div className="flex items-center gap-1.5">
+                                <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                                <span className="text-[11px] font-black text-blue-600 uppercase tracking-wider">Selected Address</span>
+                            </div>
+                            <div className="flex items-center gap-1 text-[11px] font-bold text-slate-400 group-hover:text-blue-600 transition-colors">
+                                <RefreshCw className="w-3 h-3" />
+                                재검색
+                            </div>
+                        </div>
+                        
+                        <div className="flex items-start gap-2">
+                            <MapPin className="w-4 h-4 text-slate-400 mt-1 shrink-0" />
+                            <span className="text-[16px] font-bold text-slate-900 leading-snug">
+                                {currentAddress}
+                            </span>
+                        </div>
+                        
+                        <input type="hidden" {...control.register?.("address")} value={currentAddress} />
+                    </div>
+                    
+                    <div className="relative">
+                        <FormInputField 
+                            control={control} 
+                            name="address_detail" 
+                            label="" 
+                            placeholder="상세 주소(건물명, 동·호수 등)를 입력해 주세요" 
+                            className="h-14 bg-white border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-50 rounded-2xl transition-all font-medium"
+                        />
+                    </div>
                 </div>
             )}
         </div>
     </section>
 );
-
 // 6. 위임 계약 섹션
 export const ContractSection = ({ control }: { control: Control<FormValues> }) => (
-    <section className="space-y-10 pt-10 border-t border-slate-100">
+    <section className="space-y-4 pt-6 border-t border-slate-100">
         <SectionHeader title="위임 계약 동의" />
         <ContractContent />
-        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-100 space-y-6">
+        <div className="p-8 bg-slate-50 rounded-2xl border border-slate-200 space-y-6">
             <p className="text-[13px] text-slate-600 font-medium text-center leading-relaxed px-4">
                 위 계약에 동의하신다면 하단에 <span className="text-blue-600 font-black">&quot;동의합니다&quot;</span>를 직접 입력해 주세요.
             </p>
@@ -212,8 +247,8 @@ export const ContractSection = ({ control }: { control: Control<FormValues> }) =
                 control={control} 
                 name="contract_confirm" 
                 label="" 
-                placeholder="동의합니다" 
-                className="h-16 border-2 focus:ring-4 font-black text-center text-lg placeholder:text-sm"
+                placeholder="여기에 '동의합니다'를 입력하세요" 
+                className="h-16 border-2 focus:ring-4 font-black text-center text-md placeholder:text-slate-400 placeholder:font-normal placeholder:text-[14px]"
             />
         </div>
     </section>

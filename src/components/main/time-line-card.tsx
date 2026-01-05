@@ -11,7 +11,7 @@ const events = [
 
 return (
     <section id="timeline" className="w-full bg-slate-100 py-20 overflow-hidden">
-    <h2 className="text-center mb-20 text-3xl md:text-5xl font-black">사건 전개 타임라인</h2>
+    <h2 className="text-center mb-20 text-3xl md:text-5xl font-black">사건 전개</h2>
     
     <div className="relative max-w-5xl mx-auto px-6">
         <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-slate-200" />
