@@ -46,17 +46,12 @@ export default function LawsuitForm() {
     const currentAddress = watch("address");
 
     useEffect(() => {
-        // 페이지 진입 시 스크롤을 즉시 맨 위로 올림
         window.scrollTo(0, 0);
-        
-        // 브라우저의 기본 스크롤 복원 기능 비활성화 (선택 사항)
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
 
         setIsLoaded(true);
-
-        // 컴포넌트 언마운트 시 복원 기능 원상복구
         return () => {
             if ('scrollRestoration' in history) {
                 history.scrollRestoration = 'auto';

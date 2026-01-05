@@ -21,7 +21,7 @@ export function ContractContent() {
             }
         `}</style>
 
-        <div className="contract-scroll relative h-[400px] overflow-y-auto px-6 sm:px-12 py-12 bg-white border border-slate-200 rounded-lg shadow-sm">
+        <div className="contract-scroll relative h-[350px] overflow-y-auto px-6 sm:px-12 py-12 bg-white border border-slate-200 rounded-lg shadow-sm">
             
             <div className="mb-16 text-center">
             <h3 className="text-lg font-bold text-slate-900 mb-10 tracking-widest">민사사건 위임계약서</h3>

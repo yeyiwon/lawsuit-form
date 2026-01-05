@@ -66,14 +66,29 @@ export const PrivacyAgreeSection = ({ control }: { control: Control<FormValues> 
         <PrivacyPolicyBox />
         <FormField control={control} name="privacy_agree" render={({ field }) => (
             <FormItem>
-                <RadioGroup onValueChange={field.onChange} value={field.value} className="grid gap-2">
-                    {(["agree", "disagree"] as const).map((v) => (
-                        <label key={v} className={`p-5 rounded-xl border-2 cursor-pointer font-bold text-sm transition-all ${field.value === v ? (v === 'agree' ? 'border-blue-600 bg-blue-50 text-blue-600 shadow-sm' : 'border-red-500 bg-red-50 text-red-600') : 'border-slate-100 bg-white text-slate-400'}`}>
-                            <RadioGroupItem value={v} className="sr-only" /> 
-                            {v === 'agree' ? "위 내용을 확인했으며, 동의합니다" : "동의하지 않습니다"}
-                        </label>
-                    ))}
-                </RadioGroup>
+                <FormControl>
+                    <label 
+                        className={`group relative flex items-center justify-between p-5 rounded-xl border-2 transition-all cursor-pointer ${
+                            field.value === 'agree' 
+                            ? 'border-blue-600 bg-blue-50/30' 
+                            : 'border-slate-100 bg-white hover:border-slate-200 shadow-sm'
+                        }`}
+                        onClick={() => field.onChange(field.value === 'agree' ? "" : "agree")}
+                    >
+                        <span className={`text-sm font-bold ${field.value === 'agree' ? 'text-blue-600' : 'text-slate-500'}`}>
+                            위 내용을 확인했으며, 이에 동의합니다
+                        </span>
+                        
+                        {/* 동그란 체크박스 버튼 느낌 추가 */}
+                        <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all ${
+                            field.value === 'agree' 
+                            ? 'bg-blue-600 border-blue-600' 
+                            : 'border-slate-200 bg-slate-50'
+                        }`}>
+                            <div className={`w-2 h-2 rounded-full bg-white transition-all ${field.value === 'agree' ? 'scale-100' : 'scale-0'}`} />
+                        </div>
+                    </label>
+                </FormControl>
                 <FormMessage />
             </FormItem>
         )} />
@@ -107,7 +122,7 @@ export const ApplicantInfoSection = ({ control, nationality }: { control: Contro
             />
             <FormInputField control={control} name="phone" label="휴대폰 번호" placeholder="01012345678" maxLength={11} />
             <div className="space-y-4">
-                <FormInputField control={control} name="email" label="이메일 주소" placeholder="example@mail.com" />
+                <FormInputField control={control} name="email" label="이메일 주소" placeholder="12345@gmail.com" />
                 <div className="flex gap-3 p-4 bg-blue-50 rounded-xl border border-blue-100">
                     <span className="text-blue-500 text-lg">ⓘ</span>
                     <p className="text-[13px] text-blue-700 leading-relaxed font-medium">
