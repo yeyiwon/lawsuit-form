@@ -23,7 +23,7 @@ import {
 } from "./form-sections";
 
 const STORAGE_KEY = "lawsuit_form_draft";
-const EXPIRE_TIME = 24 * 60 * 60 * 1000;
+const EXPIRE_TIME = 60 * 60 * 1000;
 
 export default function LawsuitForm() {
     const router = useRouter();
