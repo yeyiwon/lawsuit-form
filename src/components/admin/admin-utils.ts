@@ -1,8 +1,8 @@
+import * as XLSX from "xlsx";
+import { Application } from "./admin-types";
+import { toast } from "react-hot-toast";
 
-    import * as XLSX from "xlsx";
-    import { Application } from "./admin-types";
-
-    interface ExportRow {
+interface ExportRow {
     "성함": string;
     "연락처": string;
     "생년월일": string;
@@ -19,9 +19,9 @@
     "개인정보동의": string;
     "계약체결동의": string;
     "신청일시": string;
-    }
+}
 
-    const mapDataToKorean = (data: Application[]): ExportRow[] => {
+const mapDataToKorean = (data: Application[]): ExportRow[] => {
     return data.map((item) => ({
         "성함": item.name,
         "연락처": item.phone,
@@ -40,23 +40,50 @@
         "계약체결동의": item.contract_confirm || "미동의",
         "신청일시": item.created_at ? new Date(item.created_at).toLocaleString('ko-KR') : "-",
     }));
-    };
+};
 
-    export const downloadFileData = (data: Application[], format: 'xlsx' | 'csv') => {
-    if (data.length === 0) return false;
-
-    const koreanData = mapDataToKorean(data);
-    const worksheet = XLSX.utils.json_to_sheet(koreanData);
-    const workbook = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(workbook, worksheet, "신청자명단");
-
-    const dateStr = new Date().toISOString().split('T')[0];
-    const fileName = `신청자명단_${dateStr}.${format}`;
-
-    if (format === 'xlsx') {
-        XLSX.writeFile(workbook, fileName);
-    } else {
-        XLSX.writeFile(workbook, fileName, { bookType: 'csv' });
+export const downloadFileData = (data: Application[], format: 'xlsx' | 'csv'): void => {
+    if (data.length === 0) {
+        toast.error("다운로드할 데이터가 없습니다.");
+        return;
     }
-    return true;
-    };
+
+    const loadingToast = toast.loading(`${format.toUpperCase()} 파일을 생성 중입니다...`);
+
+    try {
+        const koreanData = mapDataToKorean(data);
+        const worksheet = XLSX.utils.json_to_sheet(koreanData);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, "신청자명단");
+
+        const dateStr = new Date().toISOString().split('T')[0];
+        const fileName = `신청자명단_${dateStr}.${format}`;
+
+        const wbout: ArrayBuffer = XLSX.write(workbook, {
+            bookType: format === 'xlsx' ? 'xlsx' : 'csv',
+            type: 'array'
+        });
+
+        const blob = new Blob([wbout], { type: "application/octet-stream" });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        
+        setTimeout(() => {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }, 100);
+
+        toast.dismiss(loadingToast);
+        toast.success(`${format.toUpperCase()} 다운로드 성공!`);
+
+    } catch (error) {
+        console.error("Excel Download Error:", error);
+        toast.dismiss(loadingToast);
+        toast.error("다운로드 중 오류가 발생했습니다.");
+    }
+};

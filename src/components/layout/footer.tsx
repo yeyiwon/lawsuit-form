@@ -40,7 +40,7 @@ export default function Footer() {
                 <p>사업자등록번호 123-45-67890</p>
                 </div>
                 <p className="font-bold text-slate-500 tracking-[0.2em] uppercase text-center">
-                            © 2026 Lawfirm Sim Jooyeop. All Rights Reserved.
+                            © 2026 Lawfirm Sim Jooyeop.
                         </p>
             </div>
             </div>

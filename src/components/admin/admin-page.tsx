@@ -78,7 +78,7 @@ export default function AdminDashboard() {
                         </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter className="gap-2">
-                        <AlertDialogCancel className="cursor-pointer h-14 rounded-2xl font-black border-slate-200">머무르기</AlertDialogCancel>
+                        <AlertDialogCancel className="cursor-pointer h-14 rounded-2xl font-black bg-white border-slate-200">머무르기</AlertDialogCancel>
                         <AlertDialogAction onClick={auth.handleLogout} className="cursor-pointer h-14 rounded-2xl bg-slate-900 text-white font-black px-8 hover:bg-red-600 transition-colors">
                             로그아웃
                         </AlertDialogAction>
