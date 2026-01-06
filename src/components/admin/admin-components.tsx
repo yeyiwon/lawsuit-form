@@ -107,58 +107,62 @@ export const AdminFilter = ({
     filterLeak: string; setFilterLeak: (v: string) => void;
     setCurrentPage: (p: number) => void; onReset: () => void;
 }) => (
+
     <div className="bg-white p-2 rounded-2xl border border-slate-200 shadow-sm mb-6">
-
-        <div className="flex flex-col lg:flex-row gap-3">
-            <div className="relative flex-1 min-w-0">
-                <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-slate-400" />
+            <div className="flex flex-wrap items-center gap-2">
+            <div className="relative flex-[2] min-w-[240px]">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 z-10" />
                 <Input 
-                    placeholder="성함 또는 연락처로 검색..." 
+                    placeholder="성함 또는 연락처 검색..." 
                     value={searchTerm} 
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
-                    className="h-12 w-full rounded-xl border-none bg-slate-50 pl-12 pr-6 font-bold text-slate-700 placeholder:text-slate-400 focus-visible:ring-2 focus-visible:ring-blue-500/10 focus-visible:bg-white transition-all"
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => { 
+                        setSearchTerm(e.target.value); 
+                        setCurrentPage(1); 
+                    }}
+                    className="h-11 w-full rounded-xl border-none bg-slate-50 pl-10 pr-4 font-bold text-slate-700 placeholder:text-slate-400 placeholder:font-medium placeholder:text-[13px] focus-visible:ring-2 focus-visible:ring-blue-500/10 focus-visible:bg-white transition-all outline-none"
                 />
-            </div>
-            
-            <div className="flex flex-row items-center gap-2 w-full lg:w-auto">
-                <div className="relative flex-1 lg:w-[160px] lg:flex-none">
-                    <Users className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 z-10 pointer-events-none" />
-                    <Select value={filterGuardian} onValueChange={(v: string) => { setFilterGuardian(v); setCurrentPage(1); }}>
-                        <SelectTrigger className="cursor-pointer h-12 w-full rounded-xl border-none bg-slate-50 pl-10 pr-4 font-bold text-slate-600 focus:ring-0">
-                            <SelectValue placeholder="연령 구분" />
-                        </SelectTrigger>
-                        <SelectContent className="rounded-xl border-slate-100 shadow-xl font-bold">
-                            <SelectItem value="all">전체 연령</SelectItem>
-                            <SelectItem value="yes" className="text-blue-600">미성년자</SelectItem>
-                            <SelectItem value="no">성인</SelectItem>
-                        </SelectContent>
-                    </Select>
-                </div>
+</div>
 
-                <div className="relative flex-1 lg:w-[160px] lg:flex-none">
-                    <ShieldAlert className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 z-10 pointer-events-none" />
-                    <Select value={filterLeak} onValueChange={(v: string) => { setFilterLeak(v); setCurrentPage(1); }}>
-                        <SelectTrigger className="cursor-pointer h-12 w-full rounded-xl border-none bg-slate-50 pl-10 pr-4 font-bold text-slate-600 focus:ring-0">
-                            <SelectValue placeholder="유출 여부" />
-                        </SelectTrigger>
-                        <SelectContent className="rounded-xl border-slate-100 shadow-xl font-bold">
-                            <SelectItem value="all">전체 여부</SelectItem>
-                            <SelectItem value="yes" className="text-blue-600">유출 확인</SelectItem>
-                            <SelectItem value="no">정상</SelectItem>
-                        </SelectContent>
-                    </Select>
+                <div className="flex flex-1 items-center gap-2 min-w-fit">
+                    <div className="relative flex-1">
+                        <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 z-10 pointer-events-none" />
+                        <Select value={filterGuardian} onValueChange={(v: string) => { setFilterGuardian(v); setCurrentPage(1); }}>
+                            <SelectTrigger className="h-11 w-full rounded-xl border-none bg-slate-50 pl-8 pr-2 text-xs font-bold text-slate-600 focus:ring-0">
+                                <SelectValue placeholder="연령" />
+                            </SelectTrigger>
+                            <SelectContent className="rounded-xl font-bold">
+                                <SelectItem value="all">전체 연령</SelectItem>
+                                <SelectItem value="yes">미성년자</SelectItem>
+                                <SelectItem value="no">성인</SelectItem>
+                            </SelectContent>
+                        </Select>
+                    </div>
+
+                    <div className="relative flex-1">
+                        <ShieldAlert className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 z-10 pointer-events-none" />
+                        <Select value={filterLeak} onValueChange={(v: string) => { setFilterLeak(v); setCurrentPage(1); }}>
+                            <SelectTrigger className="h-11 w-full rounded-xl border-none bg-slate-50 pl-8 pr-2 text-xs font-bold text-slate-600 focus:ring-0">
+                                <SelectValue placeholder="유출" />
+                            </SelectTrigger>
+                            <SelectContent className="rounded-xl font-bold">
+                                <SelectItem value="all">전체 여부</SelectItem>
+                                <SelectItem value="yes">유출 확인</SelectItem>
+                                <SelectItem value="no">정상</SelectItem>
+                            </SelectContent>
+                        </Select>
+                    </div>
                 </div>
 
                 <button 
+                    type="button"
                     onClick={onReset}
-                    className="cursor-pointer h-12 w-12 flex items-center justify-center bg-slate-900 text-white rounded-xl hover:bg-blue-600 transition-all group shrink-0"
-                    title="필터 초기화"
+                    className="h-11 flex-grow sm:flex-none sm:w-11 flex items-center justify-center bg-slate-900 text-white rounded-xl hover:bg-blue-600 transition-all shrink-0"
                 >
-                    <RotateCcw className="h-4 w-4 group-hover:rotate-[-180deg] transition-transform duration-500" />
+                    <RotateCcw className="h-4 w-4" />
                 </button>
             </div>
         </div>
-    </div>
+
 );
 
 /** 4. 테이블 컴포넌트 **/
