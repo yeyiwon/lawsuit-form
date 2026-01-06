@@ -97,6 +97,8 @@ export const AdminHeader = ({
     </div>
 );
 
+// 3. 필터 컴포넌트 **/
+
 export const AdminFilter = ({
     searchTerm, setSearchTerm, filterGuardian, setFilterGuardian, filterLeak, setFilterLeak, setCurrentPage, onReset
 }: {
@@ -158,6 +160,7 @@ export const AdminFilter = ({
         </div>
     </div>
 );
+
 /** 4. 테이블 컴포넌트 **/
 export const AdminTable = ({ currentItems }: { currentItems: Application[] }) => (
     <div className="w-full bg-white border-y border-slate-200">
