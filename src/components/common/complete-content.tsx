@@ -1,13 +1,29 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function CompleteContent() {
     const router = useRouter();
+    const [isValid, setIsValid] = useState(false);
     const particles = Array.from({ length: 15 });
 
+    useEffect(() => {
+        const isSubmitted = sessionStorage.getItem("form_submitted");
+
+        if (!isSubmitted) {
+            router.replace("/");
+        } else {
+            sessionStorage.removeItem("form_submitted");
+            setIsValid(true);
+        }
+    }, [router]);
+
+    if (!isValid) return null;
+    
     return (
         <div className="h-[100dvh] w-full bg-white font-sans antialiased text-slate-900 overflow-hidden flex flex-col items-center justify-center relative">
             <div className="absolute inset-0 -z-10">

@@ -83,6 +83,7 @@ export default function LawsuitForm() {
             if (error) throw error;
 
             localStorage.removeItem(STORAGE_KEY);
+            sessionStorage.setItem("form_submitted", "true");
             toast.success("접수되었습니다!", { id: toastId });
             
             reset();
