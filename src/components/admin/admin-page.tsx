@@ -111,7 +111,7 @@ export default function AdminDashboard() {
                 setCurrentPage={setCurrentPage}
                 onReset={() => { 
                     setSearchTerm(""); setFilterLeak("all"); setFilterGuardian("all"); 
-                    setCurrentPage(1); sessionStorage.clear(); 
+                    setCurrentPage(1);
                 }}
             />
             
