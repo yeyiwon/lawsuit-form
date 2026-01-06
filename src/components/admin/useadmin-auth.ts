@@ -33,11 +33,13 @@ export function useAdminAuth() {
 
     const handleLogout = useCallback(async () => {
         sessionStorage.removeItem(SESSION_TIME_KEY);
-        sessionStorage.clear(); 
+        
         await supabase.auth.signOut();
+
         setUser(null);
-        toast.success("보안을 위해 로그아웃되었습니다.");
-        window.location.reload(); 
+        setData([]);
+        
+        toast.success("로그아웃 되었습니다.");
     }, []);
 
     const handleLogin = async () => {
@@ -60,7 +62,6 @@ export function useAdminAuth() {
             
             if (session && savedTime) {
                 const elapsed = Math.floor((Date.now() - parseInt(savedTime)) / 1000);
-                
                 if (elapsed < SESSION_DURATION_SEC) {
                     setUser(session.user);
                     setTimeLeft(SESSION_DURATION_SEC - elapsed);
@@ -68,8 +69,15 @@ export function useAdminAuth() {
                 } else {
                     handleLogout();
                 }
-            } else if (session && !savedTime) {
+            } 
+
+            else if (session && !savedTime) {
                 handleLogout();
+            }
+
+            else {
+                setIsLoading(false);
+                return; 
             }
             setIsLoading(false);
         };
