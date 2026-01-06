@@ -39,6 +39,9 @@ export function useAdminAuth() {
         setUser(null);
         setData([]);
         
+        setEmail("");
+        setPassword("");
+
         toast.success("로그아웃 되었습니다.");
     }, []);
 
