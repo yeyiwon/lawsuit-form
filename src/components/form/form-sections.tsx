@@ -139,6 +139,8 @@ export const ApplicantInfoSection = ({ control, nationality }: { control: Contro
     </section>
 );
 
+// 4. 법정대리인 정보 섹션
+
 export const GuardianSection = ({ 
     control, 
     hasGuardian, 

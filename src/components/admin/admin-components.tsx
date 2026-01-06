@@ -58,7 +58,7 @@ export const AdminLogin = ({
                 onClick={handleLogin} 
                 className="cursor-pointer w-full h-16 bg-slate-900 hover:bg-blue-600 text-white font-black text-lg rounded-[22px] mt-8 transition-all active:scale-[0.98] shadow-xl shadow-slate-200"
             >
-                인증 및 접속하기
+                접속하기
             </Button>
         </div>
     </div>

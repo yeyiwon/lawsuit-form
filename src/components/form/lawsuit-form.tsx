@@ -50,7 +50,6 @@ export default function LawsuitForm() {
     const hasGuardian = formData.has_guardian || "no";
     const currentAddress = formData.address || "";
 
-    // 1. 초기 데이터 복구
     useEffect(() => {
         const savedItem = localStorage.getItem(STORAGE_KEY);
         if (savedItem) {
@@ -68,7 +67,6 @@ export default function LawsuitForm() {
         setIsLoaded(true);
     }, [reset]);
 
-    // 2. 자동 임시 저장 (제출 중일 때는 저장을 막아 리셋 데이터가 덮어씌워지지 않게 함)
     useEffect(() => {
         if (!isLoaded || isSubmitting) return; 
         
@@ -78,22 +76,19 @@ export default function LawsuitForm() {
 
     const onSubmit: SubmitHandler<FormValues> = async (values) => {
         const toastId = toast.loading("신청서를 제출 중입니다...");
-        setIsSubmitting(true); // 제출 시작 시 자동 저장 로직 중단
+        setIsSubmitting(true); 
         
         try {
             const { error } = await supabase.from('applications').insert([values]);
             if (error) throw error;
 
-            // 로컬스토리지 먼저 삭제
             localStorage.removeItem(STORAGE_KEY);
-            
             toast.success("접수되었습니다!", { id: toastId });
             
-            // 폼 리셋 후 이동
             reset();
             router.push("/complete");
         } catch (error: unknown) {
-            setIsSubmitting(false); // 실패 시에는 다시 저장이 가능하도록 복구
+            setIsSubmitting(false); 
             const message = error instanceof Error ? error.message : "전송 오류";
             toast.error("실패: " + message, { id: toastId });
         }
