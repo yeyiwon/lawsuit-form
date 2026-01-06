@@ -107,9 +107,8 @@ export const AdminFilter = ({
     filterLeak: string; setFilterLeak: (v: string) => void;
     setCurrentPage: (p: number) => void; onReset: () => void;
 }) => (
-
     <div className="bg-white p-2 rounded-2xl border border-slate-200 shadow-sm mb-6">
-            <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
             <div className="relative flex-[2] min-w-[240px]">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 z-10" />
                 <Input 
@@ -121,48 +120,47 @@ export const AdminFilter = ({
                     }}
                     className="h-11 w-full rounded-xl border-none bg-slate-50 pl-10 pr-4 font-bold text-slate-700 placeholder:text-slate-400 placeholder:font-medium placeholder:text-[13px] focus-visible:ring-2 focus-visible:ring-blue-500/10 focus-visible:bg-white transition-all outline-none"
                 />
-</div>
+            </div>
 
-                <div className="flex flex-1 items-center gap-2 min-w-fit">
-                    <div className="relative flex-1">
-                        <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 z-10 pointer-events-none" />
-                        <Select value={filterGuardian} onValueChange={(v: string) => { setFilterGuardian(v); setCurrentPage(1); }}>
-                            <SelectTrigger className="h-11 w-full rounded-xl border-none bg-slate-50 pl-8 pr-2 text-xs font-bold text-slate-600 focus:ring-0">
-                                <SelectValue placeholder="연령" />
-                            </SelectTrigger>
-                            <SelectContent className="rounded-xl font-bold">
-                                <SelectItem value="all">전체 연령</SelectItem>
-                                <SelectItem value="yes">미성년자</SelectItem>
-                                <SelectItem value="no">성인</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
-
-                    <div className="relative flex-1">
-                        <ShieldAlert className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 z-10 pointer-events-none" />
-                        <Select value={filterLeak} onValueChange={(v: string) => { setFilterLeak(v); setCurrentPage(1); }}>
-                            <SelectTrigger className="h-11 w-full rounded-xl border-none bg-slate-50 pl-8 pr-2 text-xs font-bold text-slate-600 focus:ring-0">
-                                <SelectValue placeholder="유출" />
-                            </SelectTrigger>
-                            <SelectContent className="rounded-xl font-bold">
-                                <SelectItem value="all">전체 여부</SelectItem>
-                                <SelectItem value="yes">유출 확인</SelectItem>
-                                <SelectItem value="no">정상</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
+            <div className="flex flex-1 items-center gap-2 min-w-fit">
+                <div className="relative flex-1">
+                    <Users className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 z-10 pointer-events-none" />
+                    <Select value={filterGuardian} onValueChange={(v: string) => { setFilterGuardian(v); setCurrentPage(1); }}>
+                        <SelectTrigger className="cursor-pointer h-11 w-full rounded-xl border-none bg-slate-50 pl-9 pr-2 text-[13px] font-bold text-slate-600 focus:ring-0 transition-colors data-[state=open]:bg-slate-100/60">
+                            <SelectValue placeholder="연령" />
+                        </SelectTrigger>
+                        <SelectContent className="rounded-2xl border-slate-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.1)] p-1.5 animate-in fade-in-0 zoom-in-95">
+                            <SelectItem value="all" className="cursor-pointer rounded-lg py-2 font-bold text-slate-600 focus:bg-slate-50 focus:text-blue-600 transition-colors">전체 연령</SelectItem>
+                            <SelectItem value="yes" className="cursor-pointer rounded-lg py-2 font-bold text-slate-600 focus:bg-slate-50 focus:text-blue-600 transition-colors">미성년자</SelectItem>
+                            <SelectItem value="no" className="cursor-pointer rounded-lg py-2 font-bold text-slate-600 focus:bg-slate-50 focus:text-blue-600 transition-colors">성인</SelectItem>
+                        </SelectContent>
+                    </Select>
                 </div>
 
-                <button 
-                    type="button"
-                    onClick={onReset}
-                    className="h-11 flex-grow sm:flex-none sm:w-11 flex items-center justify-center bg-slate-900 text-white rounded-xl hover:bg-blue-600 transition-all shrink-0"
-                >
-                    <RotateCcw className="h-4 w-4" />
-                </button>
+                <div className="relative flex-1">
+                    <ShieldAlert className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 z-10 pointer-events-none" />
+                    <Select value={filterLeak} onValueChange={(v: string) => { setFilterLeak(v); setCurrentPage(1); }}>
+                        <SelectTrigger className="cursor-pointer h-11 w-full rounded-xl border-none bg-slate-50 pl-9 pr-2 text-[13px] font-bold text-slate-600 focus:ring-0 transition-colors data-[state=open]:bg-slate-100/60">
+                            <SelectValue placeholder="유출" />
+                        </SelectTrigger>
+                        <SelectContent className="rounded-2xl border-slate-100 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.1)] p-1.5 animate-in fade-in-0 zoom-in-95">
+                            <SelectItem value="all" className="cursor-pointer rounded-lg py-2 font-bold text-slate-600 focus:bg-slate-50 focus:text-blue-600 transition-colors">전체 여부</SelectItem>
+                            <SelectItem value="yes" className="cursor-pointer rounded-lg py-2 font-bold text-slate-600 focus:bg-slate-50 focus:text-blue-600 transition-colors">유출 확인</SelectItem>
+                            <SelectItem value="no" className="cursor-pointer rounded-lg py-2 font-bold text-slate-600 focus:bg-slate-50 focus:text-blue-600 transition-colors">유출되지 않음</SelectItem>
+                        </SelectContent>
+                    </Select>
+                </div>
             </div>
-        </div>
 
+            <button 
+                type="button"
+                onClick={onReset}
+                className="cursor-pointer h-11 flex-grow sm:flex-none sm:w-11 flex items-center justify-center bg-slate-900 text-white rounded-xl hover:bg-blue-600 transition-all shrink-0"
+            >
+                <RotateCcw className="h-4 w-4" />
+            </button>
+        </div>
+    </div>
 );
 
 /** 4. 테이블 컴포넌트 **/
@@ -176,13 +174,13 @@ export const AdminTable = ({ currentItems }: { currentItems: Application[] }) =>
                         <th className="px-4 py-4 text-center"><div className="flex items-center justify-center gap-2"><ShieldCheck size={14} /> 자격/동의</div></th>
                         <th className="px-6 py-4 bg-blue-50/30 text-blue-600 border-x border-slate-100">법정대리인 상세</th>
                         <th className="px-6 py-4"><div className="flex items-center gap-2"><MapPin size={14} /> 송달 주소지</div></th>
-                        <th className="px-4 py-4 text-center">진행 상태</th>
+                        <th className="px-4 py-4 text-center">위임 동의 여부</th>
                         <th className="px-6 py-4 text-right"><div className="flex items-center justify-end gap-2"><Clock size={14} /> 접수일시</div></th>
                     </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                     {currentItems.length > 0 ? currentItems.map((item) => (
-                        <tr key={item.id} className="hover:bg-slate-50/40 transition-colors">
+                        <tr key={item.id} className="hover:bg-slate-50/40 transition-colors group">
                             <td className="px-6 py-5">
                                 <div className="space-y-1">
                                     <div className="flex items-center gap-2">
@@ -199,12 +197,28 @@ export const AdminTable = ({ currentItems }: { currentItems: Application[] }) =>
                             <td className="px-4 py-5 text-center">
                                 <div className="flex flex-col items-center gap-2">
                                     <div className="flex gap-1">
-                                        <span className={`px-2 py-0.5 rounded-sm text-[9px] font-black border ${item.has_leak_notice === 'yes' ? 'bg-blue-600 text-white border-blue-600' : 'bg-white text-slate-300 border-slate-200'}`}>유출확인</span>
-                                        <span className={`px-2 py-0.5 rounded-sm text-[9px] font-black border ${item.is_member_during_period === 'yes' ? 'bg-slate-800 text-white border-slate-800' : 'bg-white text-slate-300 border-slate-200'}`}>가입기간</span>
+                                        <span className={`px-2 py-0.5 rounded-sm text-[9px] font-black border transition-all ${
+                                            item.has_leak_notice === 'yes' 
+                                            ? 'bg-blue-600 text-white border-blue-600 shadow-sm shadow-blue-100' 
+                                            : 'bg-slate-50 text-slate-400 border-slate-200 opacity-60'
+                                        }`}>
+                                            {item.has_leak_notice === 'yes' ? '유출대상' : '비대상'}
+                                        </span>
+
+                                        <span className={`px-2 py-0.5 rounded-sm text-[9px] font-black border transition-colors ${
+                                            item.is_member_during_period === 'yes' 
+                                            ? 'bg-slate-800 text-white border-slate-800 shadow-sm shadow-slate-200' 
+                                            : 'bg-slate-50 text-slate-300 border-slate-100'
+                                        }`}>
+                                            {item.is_member_during_period === 'yes' ? '해당기간 가입' : '기간 미가입'}
+                                        </span>
                                     </div>
-                                    <div className={`text-[10px] font-black flex items-center gap-1 ${item.privacy_agree === 'agree' ? "text-blue-500" : "text-slate-300"}`}>
-                                        {item.privacy_agree === 'agree' ? <CheckCircle2 size={10} /> : <XCircle size={10} />}
-                                        개인정보동의완료
+                                    
+                                    <div className={`text-[10px] font-black flex items-center gap-1 transition-colors ${
+                                        item.privacy_agree === 'agree' ? "text-emerald-500" : "text-rose-400"
+                                    }`}>
+                                        {item.privacy_agree === 'agree' ? <CheckCircle2 size={10} strokeWidth={3} /> : <XCircle size={10} strokeWidth={3} />}
+                                        {item.privacy_agree === 'agree' ? "정보동의완료" : "정보미동의"}
                                     </div>
                                 </div>
                             </td>
@@ -222,23 +236,28 @@ export const AdminTable = ({ currentItems }: { currentItems: Application[] }) =>
                                         </div>
                                     </div>
                                 ) : (
-                                    <div className="text-center text-slate-300 text-[11px] font-bold tracking-tight">해당 없음</div>
+                                    <div className="flex justify-center">
+                                        <span className="text-slate-300 text-[10px] font-bold border border-slate-100 px-2 py-0.5 rounded-full bg-slate-50/50">해당 없음</span>
+                                    </div>
                                 )}
                             </td>
 
                             <td className="px-6 py-5 max-w-[300px]">
                                 <div className="space-y-0.5">
-                                    <div className="text-slate-400 text-[10px] font-black uppercase tracking-tighter">송달지</div>
-                                    <div className="text-slate-500 text-[12px] font-medium truncate">{item.address}</div>
-                                    <div className="text-slate-900 text-[13px] font-black truncate tracking-tight">{item.address_detail}</div>
+
+                                    <div className="text-slate-500 text-[11px] font-medium truncate">{item.address}</div>
+                                    <div className="text-slate-900 text-[11px] font-black truncate tracking-tight">{item.address_detail}</div>
                                 </div>
                             </td>
 
                             <td className="px-4 py-5 text-center">
-                                <span className={`inline-flex px-3 py-1 rounded-full text-[10px] font-black border ${
-                                    item.contract_confirm === '동의합니다' ? "bg-blue-50 text-blue-600 border-blue-100" : "bg-slate-50 text-slate-400 border-slate-100"
+                                <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black border transition-all ${
+                                    item.contract_confirm === '동의합니다' 
+                                    ? "bg-emerald-50 text-emerald-600 border-emerald-100 shadow-sm shadow-emerald-50" 
+                                    : "bg-slate-50 text-slate-400 border-slate-100"
                                 }`}>
-                                    {item.contract_confirm === '동의합니다' ? "동의완료" : "미동의"}
+                                    <div className={`w-1 h-1 rounded-full ${item.contract_confirm === '동의합니다' ? "bg-emerald-500 animate-pulse" : "bg-slate-300"}`} />
+                                    {item.contract_confirm === '동의합니다' ? "동의완료" : "대기중"}
                                 </span>
                             </td>
 
@@ -248,21 +267,20 @@ export const AdminTable = ({ currentItems }: { currentItems: Application[] }) =>
                                         <Calendar size={12} className="text-slate-300" />
                                         {new Date(item.created_at).toLocaleDateString('ko-KR')}
                                     </div>
-                                    <div className="text-[10px] text-slate-400 font-bold">
-                                        {new Date(item.created_at).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}
+                                    <div className="text-[10px] text-slate-400 font-bold tracking-tighter">
+                                        {new Date(item.created_at).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit', hour12: false })}
                                     </div>
                                 </div>
                             </td>
                         </tr>
                     )) : (
-                        <tr><td colSpan={6} className="py-32 text-center text-slate-300 font-black text-lg">데이터가 존재하지 않습니다.</td></tr>
+                        <tr><td colSpan={6} className="py-32 text-center text-slate-200 font-black text-xl tracking-tighter">검색 결과가 없습니다.</td></tr>
                     )}
                 </tbody>
             </table>
         </div>
     </div>
 );
-
 /** 5. 페이지네이션 컴포넌트 **/
 export const AdminPagination = ({ 
     current, total, onPageChange 

@@ -11,6 +11,7 @@ import {
     AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
     AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { LogOut } from "lucide-react";
 
 export default function AdminDashboard() {
     const pathname = usePathname();
@@ -70,18 +71,33 @@ export default function AdminDashboard() {
     return (
         <div className="p-10 max-w-[1800px] mx-auto min-h-screen bg-[#F1F5F9]">
             <AlertDialog open={isExitModalOpen} onOpenChange={setIsExitModalOpen}>
-                <AlertDialogContent className="rounded-[32px] border-none shadow-2xl">
-                    <AlertDialogHeader>
-                        <AlertDialogTitle className="text-2xl font-black text-slate-900">로그아웃 하시겠습니까?</AlertDialogTitle>
-                        <AlertDialogDescription className="text-slate-500 font-bold py-2">
-                            안전한 보안을 위해 관리자 세션을 종료합니다.
+
+                <AlertDialogContent className="w-[calc(100%-32px)] max-w-[400px] rounded-[32px] border-none shadow-2xl p-8 flex flex-col items-center text-center outline-none">
+                    <div className="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4">
+                        <LogOut className="w-8 h-8 text-red-500" />
+                    </div>
+                    
+                    <AlertDialogHeader className="space-y-2">
+                        <AlertDialogTitle className="text-2xl font-black text-slate-900 leading-tight">
+                            관리자 세션을<br />종료하시겠습니까?
+                        </AlertDialogTitle>
+                        <AlertDialogDescription className="text-slate-500 font-medium">
+                            보안을 위해 로그아웃 후에는<br />다시 인증이 필요합니다.
                         </AlertDialogDescription>
                     </AlertDialogHeader>
-                    <AlertDialogFooter className="gap-2">
-                        <AlertDialogCancel className="cursor-pointer h-14 rounded-2xl font-black bg-white border-slate-200">머무르기</AlertDialogCancel>
-                        <AlertDialogAction onClick={auth.handleLogout} className="cursor-pointer h-14 rounded-2xl bg-slate-900 text-white font-black px-8 hover:bg-red-600 transition-colors">
-                            로그아웃
+
+                    <AlertDialogFooter className="flex flex-col gap-3 w-full mt-8 sm:flex-col sm:space-x-0">
+                        <AlertDialogAction 
+                            onClick={auth.handleLogout} 
+                            className="cursor-pointer w-full h-14 rounded-2xl bg-slate-900 text-white font-bold text-base hover:bg-red-600 transition-all border-none shadow-lg shadow-slate-200"
+                        >
+                            로그아웃 하기
                         </AlertDialogAction>
+                        <AlertDialogCancel 
+                            className="cursor-pointer w-full h-14 rounded-2xl font-bold text-slate-400 bg-transparent border-none hover:bg-slate-50 hover:text-slate-600 transition-all"
+                        >
+                            돌아가기
+                        </AlertDialogCancel>
                     </AlertDialogFooter>
                 </AlertDialogContent>
             </AlertDialog>
