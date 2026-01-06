@@ -23,8 +23,7 @@ import {
 } from "./form-sections";
 
 const STORAGE_KEY = "lawsuit_form_draft";
-const EXPIRE_TIME = 24 * 60 * 60 * 1000; // 24시간
-
+const EXPIRE_TIME = 24 * 60 * 60 * 1000;
 export default function LawsuitForm() {
     const router = useRouter();
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,11 +43,9 @@ export default function LawsuitForm() {
 
     const { watch, setValue, setFocus, reset, control, formState: { isValid } } = form;
 
-    // 실시간 값 감시
     const formData = watch();
     const { nationality, has_guardian: hasGuardian, address: currentAddress } = formData;
 
-    // 1. 초기화: 데이터 복구 및 브라우저 설정
     useEffect(() => {
         const savedItem = localStorage.getItem(STORAGE_KEY);
         
@@ -60,7 +57,6 @@ export default function LawsuitForm() {
                 if (isExpired) {
                     localStorage.removeItem(STORAGE_KEY);
                 } else {
-                    // loop를 돌며 setValue를 쓰는 대신 reset을 사용하여 any 없이 타입 안전하게 복구
                     reset(data);
                 }
             } catch (e) {
@@ -72,7 +68,6 @@ export default function LawsuitForm() {
         setIsLoaded(true);
     }, [reset]);
 
-    // 2. 실시간 저장: 데이터 변경 시 로컬스토리지 동기화
     useEffect(() => {
         if (isLoaded) {
             const draft = { data: formData, timestamp: new Date().getTime() };

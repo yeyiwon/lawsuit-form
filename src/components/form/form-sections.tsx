@@ -225,11 +225,9 @@ export const AddressSection = ({
                             </span>
                         </div>
                         
-                        {/* Hidden input for react-hook-form */}
                         <input type="hidden" {...control.register("address")} value={currentAddress} />
                     </div>
-                    
-                    {/* 상세 주소 입력창 (조금 더 강조된 디자인) */}
+
                     <div className="relative animate-in slide-in-from-top-4 duration-500 delay-150">
                         <FormInputField 
                             control={control} 
@@ -244,6 +242,7 @@ export const AddressSection = ({
         </div>
     </section>
 );
+
 // 6. 위임 계약 섹션
 export const ContractSection = ({ control }: { control: Control<FormValues> }) => (
     <section className="space-y-4 pt-6 border-t border-slate-100">
